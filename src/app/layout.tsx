@@ -58,7 +58,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           </div>
           <nav className="shell nav" aria-label="Main navigation">
             <Link href="/" className="brand" aria-label="Udaipur Call Girls Services home">
-              <Image src="/logo.svg" alt="Udaipur Call Girls Services Logo" width={270} height={64} priority />
+              <Image src="/logo.svg" alt="Udaipur Call Girls Services Logo" width={300} height={64} priority />
             </Link>
             
             {/* Professional Hamburger Toggle */}
@@ -89,7 +89,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <footer className="footer">
           <div className="shell footer-grid">
             <div className="footer-brand">
-              <Image src="/logo.svg" alt="Udaipur Call Girls Services Footer Logo" width={270} height={64} />
+              <Image src="/logo.svg" alt="Udaipur Call Girls Services Footer Logo" width={300} height={64} />
               <p>
                 Udaipur's premier adult companionship desk coordinating VIP, Independent, Russian, and local companion profiles. Book starting from ₹3999 with 100% discretion and cash on delivery.
               </p>

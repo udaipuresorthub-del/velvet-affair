@@ -1138,7 +1138,7 @@ button.gold:hover {
   .booking-steps-grid,
   .features-container {
     grid-template-columns: 1fr;
-    gap: 40px;
+    gap: 30px;
   }
   
   .hero-content {
@@ -1244,6 +1244,34 @@ button.gold:hover {
 }
 
 @media (max-width: 600px) {
+  .section {
+    padding: 48px 0;
+  }
+
+  .hero {
+    padding: 60px 0;
+    min-height: auto;
+  }
+
+  h1 {
+    font-size: 28px;
+    margin-bottom: 16px;
+  }
+
+  h2 {
+    font-size: 22px;
+    margin-bottom: 12px;
+  }
+
+  p {
+    font-size: 14px;
+    line-height: 1.65;
+  }
+
+  .premium-box {
+    padding: 24px;
+  }
+
   .topbar-inner {
     flex-direction: column;
     align-items: center;
@@ -1260,6 +1288,12 @@ button.gold:hover {
   .checklist-grid,
   .dark-bullet-list {
     grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .booking-steps-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
   }
   
   .overview-row-v2 {
@@ -1269,7 +1303,7 @@ button.gold:hover {
   }
   
   .form-container-pane {
-    padding: 20px;
+    padding: 24px 18px;
   }
   
   .footer-bottom {
@@ -1279,7 +1313,7 @@ button.gold:hover {
   }
   
   .footer {
-    padding-bottom: 100px;
+    padding-bottom: 110px;
   }
   
   /* Show sticky mobile bar */
@@ -1288,16 +1322,16 @@ button.gold:hover {
     bottom: 16px;
     left: 16px;
     right: 16px;
-    height: 60px;
+    height: 62px;
     z-index: 999;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 10px;
-    background: rgba(6, 6, 8, 0.95);
-    border: 1.5px solid var(--gold);
-    border-radius: 12px;
+    gap: 12px;
+    background: rgba(10, 10, 15, 0.88);
+    border: 1.5px solid rgba(255, 51, 102, 0.25);
+    border-radius: 14px;
     padding: 8px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+    box-shadow: 0 10px 30px rgba(255, 51, 102, 0.2);
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
   }
@@ -1307,7 +1341,7 @@ button.gold:hover {
     align-items: center;
     justify-content: center;
     gap: 8px;
-    border-radius: 8px;
+    border-radius: 10px;
     font-weight: 800;
     font-size: 13px;
     color: #fff;
