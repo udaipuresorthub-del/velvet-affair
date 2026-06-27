@@ -14,9 +14,9 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
-  title: "Premium Escort Services in Udaipur | Call Girls Udaipur Available Just ₹2999",
+  title: "Premium Escort Services in Udaipur | Call Girls Udaipur Available Just ₹3999",
   description:
-    "Book premium Escort Service in Udaipur with Call Girls Udaipur. Verified Udaipur Escorts, VIP & Russian Escorts from ₹2999. 24x7 cash on delivery, WhatsApp booking.",
+    "Book premium Escort Service in Udaipur with Call Girls Udaipur. Verified Udaipur Escorts, VIP & Russian Escorts from ₹3999. 24x7 cash on delivery, WhatsApp booking.",
   verification: {
     google: siteConfig.googleVerification
   },
@@ -24,9 +24,9 @@ export const metadata: Metadata = {
     icon: "/favicon.svg"
   },
   openGraph: {
-    title: "Premium Escort Services in Udaipur | Call Girls Udaipur Just ₹2999",
+    title: "Premium Escort Services in Udaipur | Call Girls Udaipur Just ₹3999",
     description:
-      "Book premium Escort Service in Udaipur with Call Girls Udaipur. Verified Udaipur Escorts, VIP & Russian Escorts from ₹2999. 24x7 cash on delivery, WhatsApp booking.",
+      "Book premium Escort Service in Udaipur with Call Girls Udaipur. Verified Udaipur Escorts, VIP & Russian Escorts from ₹3999. 24x7 cash on delivery, WhatsApp booking.",
     url: siteConfig.url,
     siteName: siteConfig.name,
     images: ["/images/udaipur-escort-service.jpg"],
@@ -35,9 +35,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Premium Escort Services in Udaipur | Call Girls Udaipur Just ₹2999",
+    title: "Premium Escort Services in Udaipur | Call Girls Udaipur Just ₹3999",
     description:
-      "Book premium Escort Service in Udaipur with Call Girls Udaipur. Verified Udaipur Escorts, VIP & Russian Escorts from ₹2999. 24x7 cash on delivery, WhatsApp booking.",
+      "Book premium Escort Service in Udaipur with Call Girls Udaipur. Verified Udaipur Escorts, VIP & Russian Escorts from ₹3999. 24x7 cash on delivery, WhatsApp booking.",
     images: ["/images/udaipur-escort-service.jpg"]
   }
 };
@@ -57,8 +57,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             </div>
           </div>
           <nav className="shell nav" aria-label="Main navigation">
-            <Link href="/" className="brand" aria-label="Udaipur Escorts Service home">
-              <Image src="/logo.svg" alt="Udaipur Escort Service Logo" width={240} height={64} priority />
+            <Link href="/" className="brand" aria-label="Udaipur Call Girls Services home">
+              <Image src="/logo.svg" alt="Udaipur Call Girls Services Logo" width={270} height={64} priority />
             </Link>
             <div className="navlinks">
               <Link href="/#services">Services</Link>
@@ -80,9 +80,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <footer className="footer">
           <div className="shell footer-grid">
             <div className="footer-brand">
-              <Image src="/logo.svg" alt="Udaipur Escort Service Footer Logo" width={220} height={59} />
+              <Image src="/logo.svg" alt="Udaipur Call Girls Services Footer Logo" width={270} height={64} />
               <p>
-                Udaipur's premier adult companionship desk coordinating VIP, Independent, Russian, and local companion profiles. Book starting from ₹2999 with 100% discretion and cash on delivery.
+                Udaipur's premier adult companionship desk coordinating VIP, Independent, Russian, and local companion profiles. Book starting from ₹3999 with 100% discretion and cash on delivery.
               </p>
               <div className="footer-actions">
                 <Link className="button gold" href={`tel:${siteConfig.phone}`}>
@@ -115,7 +115,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             </div>
           </div>
           <div className="shell footer-bottom">
-            <span>&copy; {new Date().getFullYear()} Udaipur Companion Service. All Rights Reserved.</span>
+            <span>&copy; {new Date().getFullYear()} Udaipur Call Girls Services. All Rights Reserved.</span>
             <span>DISCLAIMER: 18+ adult social companionship desk. We operate in compliance with all local guidelines.</span>
           </div>
         </footer>

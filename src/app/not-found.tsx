@@ -2,8 +2,8 @@ import Link from "next/link";
 import { siteConfig } from "@/lib/site";
 
 export const metadata = {
-  title: "Page Not Found | Udaipur Companion Service",
-  description: "The page you are looking for does not exist. Return to Udaipur Companion Service homepage."
+  title: "Page Not Found | Udaipur Call Girls Services",
+  description: "The page you are looking for does not exist. Return to Udaipur Call Girls Services homepage."
 };
 
 export default function NotFound() {

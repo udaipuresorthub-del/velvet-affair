@@ -89,7 +89,7 @@ export function InquiryForm() {
           <option value="" disabled>
             Select companion style
           </option>
-          <option value="Premium VIP Escorts">Premium & VIP Escorts (from ₹2999)</option>
+          <option value="Premium VIP Escorts">Premium & VIP Escorts (from ₹3999)</option>
           <option value="Russian Escorts">Russian Escorts (Premium rates)</option>
           <option value="Independent Call Girls">Independent Call Girls</option>
           <option value="College Girls & Housewife">College Girls / Housewives</option>

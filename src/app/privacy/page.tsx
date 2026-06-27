@@ -1,8 +1,8 @@
 import { siteConfig } from "@/lib/site";
 
 export const metadata = {
-  title: "Privacy Policy | Udaipur Companion Service",
-  description: "Discreet and private data practices. Learn how Udaipur Companion Service protects user confidentiality, inquiry details, and respects client preferences.",
+  title: "Privacy Policy | Udaipur Call Girls Services",
+  description: "Discreet and private data practices. Learn how Udaipur Call Girls Services protects user confidentiality, inquiry details, and respects client preferences.",
   alternates: {
     canonical: `${siteConfig.url}/privacy`
   }
@@ -43,7 +43,7 @@ export default function PrivacyPage() {
         
         <h2>Information Collection & Scope</h2>
         <p>
-          Udaipur Companion Service operates as an adult-only companionship inquiry system. We collect only the essential parameters required to check companion availability, such as your nickname/name, phone number or WhatsApp contact details, preferred local area, timing window, and escort profile preferences.
+          Udaipur Call Girls Services operates as an adult-only companionship inquiry system. We collect only the essential parameters required to check companion availability, such as your nickname/name, phone number or WhatsApp contact details, preferred local area, timing window, and escort profile preferences.
         </p>
         
         <h2>How Information Is Used</h2>

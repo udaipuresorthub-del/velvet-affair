@@ -13,16 +13,16 @@ import {
   ChevronRight,
   Phone,
   MessageCircle,
-  HelpCircle,
   Clock,
-  DollarSign
+  Sparkles,
+  Award
 } from "lucide-react";
 import { InquiryForm } from "@/components/InquiryForm";
 import { serviceAreas, siteConfig } from "@/lib/site";
 
 export const metadata = {
-  title: "Premium Escort Services in Udaipur | Call Girls Udaipur Available Just ₹2999",
-  description: "Book premium Escort Service in Udaipur with Call Girls Udaipur. Verified Udaipur Escorts, VIP & Russian Escorts from ₹2999. 24x7 cash on delivery, WhatsApp booking.",
+  title: "Premium Escort Services in Udaipur | Call Girls Udaipur Available Just ₹3999",
+  description: "Book premium Escort Service in Udaipur with Call Girls Udaipur. Verified Udaipur Escorts, VIP & Russian Escorts from ₹3999. 24x7 cash on delivery, WhatsApp booking.",
   alternates: {
     canonical: siteConfig.url
   }
@@ -84,11 +84,11 @@ export default function Home() {
         <div className="hero-content">
           <div className="eyebrow-container">
             <Heart size={14} className="icon-pulse" />
-            <span className="eyebrow">Girls of Passion Udaipur</span>
+            <span className="eyebrow">Udaipur Call Girls Services</span>
           </div>
-          <h1>Udaipur Escort Service – Premium Adult Companionship in the City of Lakes</h1>
+          <h1>Premium Escort Services in Udaipur | Call Girls Udaipur Available Just ₹3999</h1>
           <p className="hero-description">
-            Welcome to <strong>Girls of Passion</strong>, the premier **Escort Service in Udaipur** offering high-class companionship at affordable rates. If you are looking for elite **Call Girls Udaipur**, our agency coordinates with verified **Udaipur Escorts**, including stunning **VIP Escorts**, international **Russian Escorts**, refined **Independent Call Girls**, young **College Girls**, and discreet **Housewife Escorts**. With our **24x7 Service**, easy **WhatsApp Booking**, and trust-oriented **Cash on Delivery** terms, secure bookings start from just ₹2999. Experience private adult companionship across Udaipur's finest hotels and resorts with complete peace of mind.
+            Welcome to <strong>Girls of Passion</strong>, the premier **Escort Service in Udaipur** offering high-class companionship at affordable rates. If you are looking for elite **Call Girls Udaipur**, our agency coordinates with verified **Udaipur Escorts**, including stunning **VIP Escorts**, international **Russian Escorts**, refined **Independent Call Girls**, young **College Girls**, and discreet **Housewife Escorts**. With our **24x7 Service**, easy **WhatsApp Booking**, and trust-oriented **Cash on Delivery** terms, secure bookings start from just ₹3999. Experience private adult companionship across Udaipur's finest hotels and resorts with complete peace of mind.
           </p>
           <div className="hero-actions">
             <Link className="button gold" href="#contact">
@@ -97,6 +97,28 @@ export default function Home() {
             <Link className="button outline" href="/profiles">
               View Profiles
             </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* Trust Badges */}
+      <section className="trust-badges-bar">
+        <div className="shell badges-grid">
+          <div className="badge-item">
+            <Star size={18} />
+            <span>₹3999 Entry Rates</span>
+          </div>
+          <div className="badge-item">
+            <UserCheck size={18} />
+            <span>100% Genuine Profiles</span>
+          </div>
+          <div className="badge-item">
+            <LockKeyhole size={18} />
+            <span>Secure & Private Booking</span>
+          </div>
+          <div className="badge-item">
+            <ShieldCheck size={18} />
+            <span>Cash on Delivery</span>
           </div>
         </div>
       </section>
@@ -118,7 +140,7 @@ export default function Home() {
             </div>
             <div className="overview-row-v2">
               <span className="label">Service Type</span>
-              <span className="value">Premium adult companionship in Udaipur</span>
+              <span className="value">Premium adult companionship & escort service in Udaipur</span>
             </div>
             <div className="overview-row-v2">
               <span className="label">Main Location</span>
@@ -253,8 +275,34 @@ export default function Home() {
         </div>
       </section>
 
-      {/* VIP Escort Services & Area Coverage */}
+      {/* Expanded VIP & Russian Escort Info (New Content block for better ranking) */}
       <section className="section">
+        <div className="shell grid-2">
+          <div className="editorial-card-v3">
+            <Sparkles size={24} className="gold-text" />
+            <h3>High Profile Russian Escorts & VIP Call Girls in Udaipur</h3>
+            <p>
+              We coordinate with international models and high-profile companion agencies to maintain an elite list of Russian companion options in Udaipur. These profiles bring international elegance, premium social presentation, and distinct visual style, making them highly sought-after for luxury desert resort stays and high-end lakeside heritage gatherings.
+            </p>
+            <p>
+              Each companion is fluent in conversation and respects the absolute privacy parameters expected by our elite clients. For inquiries regarding specific languages, styling preferences, or travel itineraries, contact our dedicated support agents.
+            </p>
+          </div>
+          <div className="editorial-card-v3">
+            <Award size={24} className="gold-text" />
+            <h3>Top Rated Independent Companions & College Girls</h3>
+            <p>
+              For clients seeking a more casual, warm, and friendly social experience, our directory coordinates with local college companions and independent call girls in Udaipur. These options are ideal for relaxed city guides, visiting local historic spots around the City Palace, or simply having a polite partner for a dinner outing.
+            </p>
+            <p>
+              By offering direct booking without advance deposits via Cash on Delivery, we build a trusted environment for local residents and travellers. Let us arrange a prompt booking starting from ₹3999.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* VIP Escort Services & Area Coverage */}
+      <section className="section alt">
         <div className="shell grid-2">
           {/* VIP Services */}
           <div className="premium-box">
@@ -307,7 +355,7 @@ export default function Home() {
       </section>
 
       {/* Booking Steps Section */}
-      <section className="section alt">
+      <section className="section">
         <div className="shell">
           <div className="center-header">
             <span className="eyebrow">Booking Guide</span>
@@ -350,7 +398,7 @@ export default function Home() {
       </section>
 
       {/* Privacy Standards & Trusted Service */}
-      <section className="section">
+      <section className="section alt">
         <div className="shell grid-2">
           {/* Privacy Standards */}
           <div className="premium-box alt">
@@ -375,7 +423,7 @@ export default function Home() {
           {/* Trusted Service */}
           <div className="premium-box">
             <span className="eyebrow">Discreet Booking</span>
-            <h3>Trusted Adult Companion Service in Udaipur</h3>
+            <h3>Trusted Udaipur Call Girls Services</h3>
             <p className="box-desc">
               Many clients search for terms like call girl Udaipur, Udaipur call girl, call girls service Udaipur, or top call girls service in Udaipur when looking for adult companionship online. At Girls of Passion, we present this service in a more professional, respectful, and privacy-focused way.
             </p>
@@ -397,7 +445,7 @@ export default function Home() {
       </section>
 
       {/* Local Options, Model Profiles, Support, Pricing, Hotels Card Grids */}
-      <section className="section alt">
+      <section className="section">
         <div className="shell">
           <div className="center-header">
             <span className="eyebrow">Service Guidelines</span>
@@ -507,7 +555,7 @@ export default function Home() {
       </section>
 
       {/* Adult Only & Call Girls Service & Privacy Detail Paragraphs */}
-      <section className="section">
+      <section className="section alt">
         <div className="shell grid-2">
           {/* Adult Only Guidelines */}
           <div className="premium-box">
@@ -554,7 +602,7 @@ export default function Home() {
       </section>
 
       {/* Extended Editorial Text Paragraphs */}
-      <section className="section alt">
+      <section className="section">
         <div className="shell text-editorial-container">
           <div className="editorial-block">
             <span className="eyebrow font-gold">Why Privacy Matters</span>
@@ -581,7 +629,7 @@ export default function Home() {
       </section>
 
       {/* Book Udaipur Escort Service Now Panel */}
-      <section className="section">
+      <section className="section alt">
         <div className="shell booking-cta-panel">
           <div className="cta-left">
             <span className="eyebrow text-dark">Get Started</span>
@@ -615,7 +663,7 @@ export default function Home() {
       </section>
 
       {/* Booking Form */}
-      <section className="section alt" id="contact">
+      <section className="section" id="contact">
         <div className="shell form-wrap-v2">
           <div className="form-info-pane">
             <span className="eyebrow">Reservation Desk</span>
@@ -634,7 +682,7 @@ export default function Home() {
       </section>
 
       {/* Frequently Asked Questions */}
-      <section className="section" id="faq">
+      <section className="section alt" id="faq">
         <div className="shell">
           <div className="center-header">
             <span className="eyebrow">FAQ</span>

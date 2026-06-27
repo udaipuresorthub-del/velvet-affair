@@ -4,7 +4,7 @@ import { profileImages, siteConfig } from "@/lib/site";
 
 export const metadata = {
   title: "Reviewed Companion Profiles | Call Girls in Udaipur Preview",
-  description: "Browse our premium companion profiles in Udaipur. Select VIP, independent, model-style, and Russian escort previews starting from ₹2999 with 24x7 support.",
+  description: "Browse our premium companion profiles in Udaipur. Select VIP, independent, model-style, and Russian escort previews starting from ₹3999 with 24x7 support.",
   alternates: {
     canonical: `${siteConfig.url}/profiles`
   }
@@ -40,7 +40,7 @@ export default function ProfilesPage() {
         <div className="eyebrow">Reviewed Profile Previews</div>
         <h1>Our Premium Companion Profiles in Udaipur</h1>
         <p className="lead">
-          Browse through our verified portfolio of VIP companion profiles, independent call girls, and model-style escorts. Previews are sorted below for client convenience. Booking packages start at just ₹2999 with cash on delivery.
+          Browse through our verified portfolio of VIP companion profiles, independent call girls, and model-style escorts. Previews are sorted below for client convenience. Booking packages start at just ₹3999 with cash on delivery.
         </p>
 
         <div className="profile-grid" style={{ marginTop: 40 }}>

@@ -1,5 +1,5 @@
 export const siteConfig = {
-  name: "Udaipur Companion Service",
+  name: "Udaipur Call Girls Services",
   city: "Udaipur",
   url: "https://udaipurescortsservice.com",
   phone: "+91 8000253680",
@@ -21,7 +21,7 @@ export const serviceAreas = [
 
 export const overviewRows = [
   ["Service Type", "Premium adult social companionship & escort service in Udaipur"],
-  ["Price Range", "Starting from just ₹2999 (No Hidden Charges)"],
+  ["Price Range", "Starting from just ₹3999 (No Hidden Charges)"],
   ["Booking Options", "Call, WhatsApp Booking & Cash on Delivery"],
   ["Availability", "24x7 Service, subject to profile availability"],
   ["Profile Quality", "Verified, VIP, Independent, Model & Russian profiles"],
@@ -58,7 +58,7 @@ export const trustPoints = [
   "Professional and highly polite communication",
   "100% Discreet inquiry & booking support",
   "Direct WhatsApp booking available 24x7",
-  "Premium, model, and local categories starting at ₹2999",
+  "Premium, model, and local categories starting at ₹3999",
   "Availability across major luxury hotels in Udaipur",
   "Cash on Delivery - payment on physical arrival",
   "Respectful, consent-based, adult-only guidelines"
@@ -71,7 +71,7 @@ export const faqs = [
   },
   {
     question: "What are the rates for hiring a call girl Udaipur?",
-    answer: "Our premium companion packages start at just ₹2999 with flexible booking durations. Payment is settled via Cash on Delivery for complete trust and transparency."
+    answer: "Our premium companion packages start at just ₹3999 with flexible booking durations. Payment is settled via Cash on Delivery for complete trust and transparency."
   },
   {
     question: "Do you offer hotel room delivery services for call girl Udaipur?",
@@ -125,7 +125,7 @@ export const seoContentHtml = `
     
     <p>Udaipur, the romantic City of Lakes, is home to magnificent heritage palaces, fine-dining restaurants, and luxury lakefront resorts. Whether you are visiting for business, a holiday, or a private event, finding a premium and reliable <strong>escort service Udaipur</strong> can make your stay much more memorable. Our agency provides access to top-rated <strong>Udaipur call girl service</strong> options, bringing together elegance, discretion, and absolute professionalism.</p>
     
-    <p>When you are looking for a reliable <strong>call girl Udaipur</strong>, you want to be sure you are dealing with a platform that values your privacy and time. We work hard to maintain high standards of service. We coordinate with <strong>independent call girl Udaipur</strong> profiles, high profile models, and VIP companions. All services are available at reasonable rates starting from just ₹2999. Our services feature <strong>Cash on Delivery</strong> and <strong>24x7 service</strong> support.</p>
+    <p>When you are looking for a reliable <strong>call girl Udaipur</strong>, you want to be sure you are dealing with a platform that values your privacy and time. We work hard to maintain high standards of service. We coordinate with <strong>independent call girl Udaipur</strong> profiles, high profile models, and VIP companions. All services are available at reasonable rates starting from just ₹3999. Our services feature <strong>Cash on Delivery</strong> and <strong>24x7 service</strong> support.</p>
     
     <div class="seo-toc">
       <h3>Table of Contents</h3>
