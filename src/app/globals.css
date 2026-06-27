@@ -4,10 +4,10 @@
   --bg-card-hover: #121219;
   --ink: #f4f4f6;
   --muted: #a39f97;
-  --line: rgba(212, 175, 55, 0.18);
-  --gold: #d4af37;
-  --gold-glow: rgba(212, 175, 55, 0.35);
-  --gold-gradient: linear-gradient(135deg, #f2e3a9 0%, #d4af37 50%, #b8860b 100%);
+  --line: rgba(255, 51, 102, 0.18);
+  --gold: #ff3366;
+  --gold-glow: rgba(255, 51, 102, 0.35);
+  --gold-gradient: linear-gradient(135deg, #ff668f 0%, #ff3366 50%, #c40b35 100%);
   --success: #1b8a4f;
   --success-bg: rgba(27, 138, 79, 0.12);
   --error: #ff4d4d;
@@ -220,7 +220,7 @@ h1, h2, h3, h4 {
 h1 {
   font-size: clamp(34px, 5.5vw, 56px);
   margin-bottom: 24px;
-  background: linear-gradient(135deg, #ffffff 20%, #f4e6af 60%, #d4af37 100%);
+  background: linear-gradient(135deg, #ffffff 20%, #ff8fa3 60%, #ff3366 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
