@@ -1,51 +1,64 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
-import { Be_Vietnam_Pro } from "next/font/google";
-import { MessageCircle, Phone } from "lucide-react";
+import { Inter } from "next/font/google";
+import { MessageCircle, Phone, Mail, Clock, MapPin } from "lucide-react";
 import "./globals.css";
 import { serviceAreas, siteConfig } from "@/lib/site";
 
-const beVietnam = Be_Vietnam_Pro({
+const inter = Inter({
   subsets: ["latin"],
-  weight: ["400", "500", "600", "700", "800", "900"],
+  weight: ["300", "400", "500", "600", "700", "800", "900"],
   display: "swap"
 });
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
-  title: "Udaipur Companion Service | Premium Adult Social Companionship",
+  title: "Premium Escort Services in Udaipur | Call Girls Udaipur Available Just ₹2999",
   description:
-    "Private adult social companionship support in Udaipur with verified profiles, discreet inquiry handling, and respectful 18+ guidelines.",
+    "Book premium Escort Service in Udaipur with Call Girls Udaipur. Verified Udaipur Escorts, VIP & Russian Escorts from ₹2999. 24x7 cash on delivery, WhatsApp booking.",
+  verification: {
+    google: siteConfig.googleVerification
+  },
   icons: {
     icon: "/favicon.svg"
   },
   openGraph: {
-    title: "Udaipur Companion Service",
+    title: "Premium Escort Services in Udaipur | Call Girls Udaipur Just ₹2999",
     description:
-      "Discreet adult social companionship support across Udaipur hotels, resorts, events, and city locations.",
+      "Book premium Escort Service in Udaipur with Call Girls Udaipur. Verified Udaipur Escorts, VIP & Russian Escorts from ₹2999. 24x7 cash on delivery, WhatsApp booking.",
     url: siteConfig.url,
     siteName: siteConfig.name,
     images: ["/images/udaipur-escort-service.jpg"],
     locale: "en_IN",
     type: "website"
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Premium Escort Services in Udaipur | Call Girls Udaipur Just ₹2999",
+    description:
+      "Book premium Escort Service in Udaipur with Call Girls Udaipur. Verified Udaipur Escorts, VIP & Russian Escorts from ₹2999. 24x7 cash on delivery, WhatsApp booking.",
+    images: ["/images/udaipur-escort-service.jpg"]
   }
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en-IN" className={beVietnam.className}>
+    <html lang="en-IN" className={inter.className}>
+      <head>
+        <meta name="google-site-verification" content={siteConfig.googleVerification} />
+      </head>
       <body>
         <header className="header">
           <div className="topbar">
             <div className="shell topbar-inner">
-              <span>18+ verified adult social companionship support in Udaipur</span>
-              <span>Private inquiries | 24x7 response | Lawful use only</span>
+              <span className="flex-center-gap"><Clock size={12} /> 24x7 Instant Dispatch & Booking</span>
+              <span className="flex-center-gap"><ShieldCheckIcon size={12} /> Cash on Delivery Available</span>
             </div>
           </div>
           <nav className="shell nav" aria-label="Main navigation">
-            <Link href="/" className="brand" aria-label="Udaipur Companion Service home">
-              <Image src="/logo.svg" alt="Udaipur Companion Service" width={240} height={64} priority />
+            <Link href="/" className="brand" aria-label="Udaipur Escorts Service home">
+              <Image src="/logo.svg" alt="Udaipur Escort Service Logo" width={240} height={64} priority />
             </Link>
             <div className="navlinks">
               <Link href="/#services">Services</Link>
@@ -53,66 +66,89 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               <Link href="/#areas">Areas</Link>
               <Link href="/#faq">FAQ</Link>
               <Link className="nav-call" href={`tel:${siteConfig.phone}`}>
-                <Phone size={16} /> Call
+                <Phone size={14} /> Call Now
               </Link>
               <Link className="button gold nav-cta" href="/#contact">
-                Enquire Now
+                Book Now
               </Link>
             </div>
           </nav>
         </header>
+        
         {children}
+
         <footer className="footer">
           <div className="shell footer-grid">
             <div className="footer-brand">
-              <Image src="/logo.svg" alt="Udaipur Companion Service" width={220} height={59} />
+              <Image src="/logo.svg" alt="Udaipur Escort Service Footer Logo" width={220} height={59} />
               <p>
-                Adult-only social companionship platform for lawful, respectful, and private inquiries in Udaipur.
+                Udaipur's premier adult companionship desk coordinating VIP, Independent, Russian, and local companion profiles. Book starting from ₹2999 with 100% discretion and cash on delivery.
               </p>
               <div className="footer-actions">
                 <Link className="button gold" href={`tel:${siteConfig.phone}`}>
-                  <Phone size={18} /> Call
+                  <Phone size={18} /> Call Now
                 </Link>
                 <Link className="button footer-whatsapp" href={`https://wa.me/${siteConfig.whatsapp}`}>
-                  <MessageCircle size={18} /> WhatsApp
+                  <MessageCircle size={18} /> WhatsApp Booking
                 </Link>
               </div>
             </div>
             <div className="footer-col">
-              <h3>Explore</h3>
-              <Link href="/#services">Services</Link>
-              <Link href="/profiles">Profiles</Link>
-              <Link href="/#contact">Contact</Link>
-              <Link href="/#faq">FAQ</Link>
+              <h3>Services</h3>
+              <Link href="/#services">VIP Escorts</Link>
+              <Link href="/profiles">Verified Profiles</Link>
+              <Link href="/#services">Russian Companions</Link>
+              <Link href="/#services">Independent Girls</Link>
             </div>
             <div className="footer-col">
-              <h3>Locations</h3>
+              <h3>Lakeside Locations</h3>
               {serviceAreas.slice(0, 5).map((area) => (
-                <span key={area}>{area}</span>
+                <span key={area} className="flex-center-gap"><MapPin size={12} /> {area}</span>
               ))}
             </div>
             <div className="footer-col">
-              <h3>Legal</h3>
+              <h3>Legal & Contact</h3>
               <Link href="/privacy">Privacy Policy</Link>
-              <Link href="/terms">Terms</Link>
-              <span>18+ only</span>
-              <span>Follow all applicable local laws.</span>
+              <Link href="/terms">Terms of Use</Link>
+              <span className="flex-center-gap"><Mail size={12} /> {siteConfig.email}</span>
+              <span>Must be 18+ to book.</span>
             </div>
           </div>
           <div className="shell footer-bottom">
-            <span>{new Date().getFullYear()} Udaipur Companion Service</span>
-            <span>Private adult social companionship inquiries only.</span>
+            <span>&copy; {new Date().getFullYear()} Udaipur Companion Service. All Rights Reserved.</span>
+            <span>DISCLAIMER: 18+ adult social companionship desk. We operate in compliance with all local guidelines.</span>
           </div>
         </footer>
+
+        {/* Sticky Mobile Contact Actions */}
         <div className="mobile-sticky-actions" aria-label="Quick contact actions">
-          <Link href={`tel:${siteConfig.phone}`}>
+          <Link href={`tel:${siteConfig.phone}`} className="mobile-call-sticky">
             <Phone size={18} /> Call Now
           </Link>
-          <Link href={`https://wa.me/${siteConfig.whatsapp}`}>
+          <Link href={`https://wa.me/${siteConfig.whatsapp}`} className="mobile-wa-sticky">
             <MessageCircle size={18} /> WhatsApp
           </Link>
         </div>
       </body>
     </html>
+  );
+}
+
+function ShieldCheckIcon({ size }: { size: number }) {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width={size}
+      height={size}
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    >
+      <path d="M20 13c0 5-3.5 7.5-7.66 9.7a1 1 0 0 1-.68 0C7.5 20.5 4 18 4 13V6a1 1 0 0 1 .76-.97l8-2a1 1 0 0 1 .48 0l8 2A1 1 0 0 1 20 6z" />
+      <path d="m9 12 2 2 4-4" />
+    </svg>
   );
 }

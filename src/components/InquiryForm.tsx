@@ -1,7 +1,7 @@
 "use client";
 
 import { FormEvent, useState } from "react";
-import { MessageCircle, Phone } from "lucide-react";
+import { MessageCircle, Phone, CheckSquare } from "lucide-react";
 import { serviceAreas, siteConfig } from "@/lib/site";
 
 type Status = "idle" | "loading" | "success" | "error";
@@ -26,80 +26,102 @@ export function InquiryForm() {
       consent: formData.get("consent") === "on"
     };
 
-    const response = await fetch("/api/inquiries", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(payload)
-    });
+    try {
+      const response = await fetch("/api/inquiries", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(payload)
+      });
 
-    const result = await response.json();
+      const result = await response.json();
 
-    if (response.ok) {
-      setStatus("success");
-      setMessage(result.message);
-      event.currentTarget.reset();
-      return;
+      if (response.ok) {
+        setStatus("success");
+        setMessage(result.message || "Thank you. Your request was received privately.");
+        event.currentTarget.reset();
+        return;
+      }
+
+      setStatus("error");
+      setMessage(result.message || "Something went wrong. Please try WhatsApp Booking.");
+    } catch (error) {
+      setStatus("error");
+      setMessage("Failed to submit inquiry. Please call us directly.");
     }
-
-    setStatus("error");
-    setMessage(result.message || "Please try again.");
   }
 
   return (
-    <form onSubmit={onSubmit}>
+    <form className="booking-form-v2" onSubmit={onSubmit}>
+      <div className="input-group-row">
+        <label>
+          <span>Nickname or Name</span>
+          <input name="name" placeholder="Your name (e.g. Rahul)" required minLength={2} />
+        </label>
+        
+        <label>
+          <span>Phone or WhatsApp Number</span>
+          <input name="phone" type="tel" placeholder="+91..." required minLength={7} />
+        </label>
+      </div>
+
+      <div className="input-group-row">
+        <label>
+          <span>Preferred Area in Udaipur</span>
+          <select name="area" required defaultValue="">
+            <option value="" disabled>
+              Select area location
+            </option>
+            {serviceAreas.map((area) => (
+              <option key={area} value={area}>{area}</option>
+            ))}
+          </select>
+        </label>
+
+        <label>
+          <span>Prefered Schedule Timing</span>
+          <input name="timing" placeholder="e.g., Today evening, 9 PM" required />
+        </label>
+      </div>
+
       <label>
-        Name
-        <input name="name" placeholder="Your name" required minLength={2} />
-      </label>
-      <label>
-        Phone or WhatsApp
-        <input name="phone" placeholder="+91..." required minLength={7} />
-      </label>
-      <label>
-        Preferred area
-        <select name="area" required defaultValue="">
-          <option value="" disabled>
-            Select area
-          </option>
-          {serviceAreas.map((area) => (
-            <option key={area}>{area}</option>
-          ))}
-        </select>
-      </label>
-      <label>
-        Timing
-        <input name="timing" placeholder="Today evening, tomorrow afternoon..." required />
-      </label>
-      <label>
-        Preference
+        <span>Companionship Category Preference</span>
         <select name="preference" required defaultValue="">
           <option value="" disabled>
-            Select preference
+            Select companion style
           </option>
-          <option>Premium social companion</option>
-          <option>VIP event companion</option>
-          <option>Model-style profile</option>
-          <option>Local city companion</option>
+          <option value="Premium VIP Escorts">Premium & VIP Escorts (from ₹2999)</option>
+          <option value="Russian Escorts">Russian Escorts (Premium rates)</option>
+          <option value="Independent Call Girls">Independent Call Girls</option>
+          <option value="College Girls & Housewife">College Girls / Housewives</option>
         </select>
       </label>
+
       <label>
-        Notes
-        <textarea name="message" placeholder="Share location, timing, and profile preference." />
+        <span>Custom Instructions / Hotel Details</span>
+        <textarea name="message" placeholder="Optional notes (e.g. hotel name, preferred profile traits)" />
       </label>
-      <label className="check">
+
+      <label className="checkbox-label-v2">
         <input name="consent" type="checkbox" required />
-        <span>I confirm that I am 18+ and this is a lawful social companionship inquiry.</span>
+        <span className="checkbox-text">I verify that I am an adult (18+) and agree to cash on delivery.</span>
       </label>
-      <button className="gold" type="submit" disabled={status === "loading"}>
-        {status === "loading" ? "Sending..." : "Send discreet inquiry"}
+
+      <button className="button gold full-width" type="submit" disabled={status === "loading"}>
+        {status === "loading" ? "Submitting Inquiry..." : "Submit Secure Booking Enquiry"}
       </button>
-      {message ? <div className="notice">{message}</div> : null}
-      <div className="actions">
-        <a className="button" href={`tel:${siteConfig.phone}`}>
-          <Phone size={18} /> Call
+
+      {message && (
+        <div className={`status-notice-v2 ${status}`}>
+          <p>{message}</p>
+        </div>
+      )}
+
+      <div className="quick-actions-form">
+        <a className="button form-call-action" href={`tel:${siteConfig.phone}`}>
+          <Phone size={16} /> Call Direct
         </a>
-        <a className="button" href={`https://wa.me/${siteConfig.whatsapp}`}>
-          <MessageCircle size={18} /> WhatsApp
+        <a className="button form-wa-action" href={`https://wa.me/${siteConfig.whatsapp}`}>
+          <MessageCircle size={16} /> WhatsApp Booking
         </a>
       </div>
     </form>
