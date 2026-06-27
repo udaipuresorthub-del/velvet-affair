@@ -1,8 +1,16 @@
 import Image from "next/image";
 import Link from "next/link";
-import { CalendarCheck, LockKeyhole, MapPin, ShieldCheck } from "lucide-react";
+import { CalendarCheck, CheckCircle2, LockKeyhole, MapPin, ShieldCheck } from "lucide-react";
 import { InquiryForm } from "@/components/InquiryForm";
-import { companionTypes, faqs, serviceAreas, siteConfig } from "@/lib/site";
+import {
+  companionTypes,
+  contentSections,
+  faqs,
+  overviewRows,
+  serviceAreas,
+  siteConfig,
+  trustPoints
+} from "@/lib/site";
 
 const jsonLd = {
   "@context": "https://schema.org",
@@ -70,7 +78,28 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="section alt" id="services">
+      <section className="section alt">
+        <div className="shell overview-wrap">
+          <div>
+            <div className="eyebrow">Quick overview</div>
+            <h2>Premium adult companionship in the City of Lakes.</h2>
+            <p>
+              A clear snapshot of how the platform works for travellers, business guests, residents, hotel stays,
+              private social meetings, and refined events across Udaipur.
+            </p>
+          </div>
+          <div className="overview-table">
+            {overviewRows.map(([label, value]) => (
+              <div className="overview-row" key={label}>
+                <strong>{label}</strong>
+                <span>{value}</span>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="section" id="services">
         <div className="shell">
           <div className="eyebrow">Service categories</div>
           <h2>Choose the right social profile for your occasion.</h2>
@@ -83,6 +112,27 @@ export default function Home() {
                   <p>{item.copy}</p>
                 </div>
               </article>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="section alt">
+        <div className="shell split">
+          <div>
+            <div className="eyebrow">Why clients choose us</div>
+            <h2>Trust, privacy, and smooth coordination from inquiry to confirmation.</h2>
+            <p>
+              The experience is built for adults who expect genuine profiles, fast replies, professional support, and a
+              discreet process without unnecessary questions.
+            </p>
+          </div>
+          <div className="trust-list">
+            {trustPoints.map((point) => (
+              <div className="trust-item" key={point}>
+                <CheckCircle2 size={20} />
+                <span>{point}</span>
+              </div>
             ))}
           </div>
         </div>
@@ -109,7 +159,24 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="section alt">
+      <section className="section alt" id="complete-content">
+        <div className="shell">
+          <div className="eyebrow">Complete service details</div>
+          <h2>Everything clients need to know before making a private inquiry.</h2>
+          <div className="content-grid">
+            {contentSections.map((section) => (
+              <article className="content-block" key={section.title}>
+                <h3>{section.title}</h3>
+                {section.copy.map((paragraph) => (
+                  <p key={paragraph}>{paragraph}</p>
+                ))}
+              </article>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="section">
         <div className="shell">
           <div className="eyebrow">How it works</div>
           <h2>Simple inquiry, clear coordination, no unnecessary details.</h2>
