@@ -1,12 +1,12 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
-import { Inter } from "next/font/google";
+import { Be_Vietnam_Pro } from "next/font/google";
 import { MessageCircle, Phone, Mail, Clock, MapPin } from "lucide-react";
 import "./globals.css";
 import { serviceAreas, siteConfig } from "@/lib/site";
 
-const inter = Inter({
+const beVietnam = Be_Vietnam_Pro({
   subsets: ["latin"],
   weight: ["300", "400", "500", "600", "700", "800", "900"],
   display: "swap"
@@ -44,7 +44,7 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en-IN" className={inter.className}>
+    <html lang="en-IN" className={beVietnam.className}>
       <head>
         <meta name="google-site-verification" content={siteConfig.googleVerification} />
       </head>

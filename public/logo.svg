@@ -6,15 +6,14 @@
       <stop offset="100%" stop-color="#98002e"/>
     </linearGradient>
   </defs>
-  <rect width="300" height="64" rx="14" fill="#060608" stroke="url(#rose-gold)" stroke-width="1.2" stroke-opacity="0.25"/>
   
-  <!-- Stylized Royal Crown & Spark Icon -->
-  <g transform="translate(14, 14)">
+  <!-- Stylized Royal Crown & Spark Icon (Transparent Floating) -->
+  <g transform="translate(10, 14)">
     <circle cx="18" cy="18" r="17" stroke="url(#rose-gold)" stroke-width="1.5" stroke-opacity="0.5"/>
     <path d="M 9 23 L 27 23 L 29 13 L 22 17 L 18 10 L 14 17 L 7 13 Z" fill="url(#rose-gold)" filter="drop-shadow(0 2px 5px rgba(255, 46, 91, 0.4))"/>
     <circle cx="18" cy="18" r="2" fill="#ffffff"/>
   </g>
   
-  <text x="64" y="27" fill="#FFFFFF" font-family="'Cinzel', 'Playfair Display', 'Georgia', 'Times New Roman', serif" font-size="18" font-weight="900" letter-spacing="0.08em">UDAIPUR</text>
-  <text x="64" y="47" fill="url(#rose-gold)" font-family="'Montserrat', 'Inter', Arial, sans-serif" font-size="11" font-weight="800" letter-spacing="0.16em">CALL GIRLS SERVICES</text>
+  <text x="60" y="27" fill="#FFFFFF" font-family="'Cinzel', 'Playfair Display', 'Georgia', serif" font-size="18" font-weight="900" letter-spacing="0.08em">UDAIPUR</text>
+  <text x="60" y="47" fill="url(#rose-gold)" font-family="'Be Vietnam Pro', 'Inter', Arial, sans-serif" font-size="11" font-weight="800" letter-spacing="0.16em">CALL GIRLS SERVICES</text>
 </svg>

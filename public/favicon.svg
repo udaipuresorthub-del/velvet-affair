@@ -6,10 +6,11 @@
       <stop offset="100%" stop-color="#98002e"/>
     </linearGradient>
   </defs>
-  <rect width="64" height="64" rx="16" fill="#060608" stroke="url(#rose-gold)" stroke-width="1.5" stroke-opacity="0.3"/>
-  <g transform="translate(14, 14)">
-    <circle cx="18" cy="18" r="17" stroke="url(#rose-gold)" stroke-width="1.5" stroke-opacity="0.5"/>
-    <path d="M 9 23 L 27 23 L 29 13 L 22 17 L 18 10 L 14 17 L 7 13 Z" fill="url(#rose-gold)"/>
-    <circle cx="18" cy="18" r="2" fill="#ffffff"/>
+  
+  <!-- Transparent Center-Aligned Royal Crown and Spark -->
+  <g transform="translate(4, 4)">
+    <circle cx="28" cy="28" r="26" stroke="url(#rose-gold)" stroke-width="2.2" stroke-opacity="0.85"/>
+    <path d="M 14 36 L 42 36 L 45 20 L 34 26 L 28 15 L 22 26 L 11 20 Z" fill="url(#rose-gold)" filter="drop-shadow(0 2px 8px rgba(255, 46, 91, 0.45))"/>
+    <circle cx="28" cy="28" r="2.5" fill="#ffffff"/>
   </g>
 </svg>
