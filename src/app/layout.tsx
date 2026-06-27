@@ -60,6 +60,15 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             <Link href="/" className="brand" aria-label="Udaipur Call Girls Services home">
               <Image src="/logo.svg" alt="Udaipur Call Girls Services Logo" width={270} height={64} priority />
             </Link>
+            
+            {/* Professional Hamburger Toggle */}
+            <input type="checkbox" id="nav-toggle" className="nav-toggle-input" />
+            <label htmlFor="nav-toggle" className="nav-toggle-label" aria-label="Toggle navigation menu">
+              <span></span>
+              <span></span>
+              <span></span>
+            </label>
+
             <div className="navlinks">
               <Link href="/#services">Services</Link>
               <Link href="/profiles">Profiles</Link>
