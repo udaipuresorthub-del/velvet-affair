@@ -18,7 +18,7 @@ import {
   Award
 } from "lucide-react";
 import { InquiryForm } from "@/components/InquiryForm";
-import { serviceAreas, siteConfig } from "@/lib/site";
+import { profileImages, serviceAreas, siteConfig } from "@/lib/site";
 
 export const metadata = {
   title: "Premium Escort Services in Udaipur | Call Girls Udaipur Available Just ₹3999",
@@ -29,6 +29,33 @@ export const metadata = {
 };
 
 export default function Home() {
+  const girlsCards = [
+    {
+      name: "Aisha Sharma",
+      age: "22 Years",
+      rating: "4.9",
+      image: "/images/beautiful-escort-girls-udaipur.jpg",
+      title: "Premium Escort",
+      copy: "Aisha is a polished companion choice for Udaipur guests who prefer charm, privacy, and smooth booking support."
+    },
+    {
+      name: "Priya Singh",
+      age: "24 Years",
+      rating: "5.0",
+      image: "/images/model-call-girl-service-udaipur.jpg",
+      title: "VIP Companion",
+      copy: "Priya offers a refined social presence for private dinners, hotel meetings, and premium companionship requests."
+    },
+    {
+      name: "Neha Verma",
+      age: "21 Years",
+      rating: "4.8",
+      image: "/images/high-class-call-girls-udaipur.jpg",
+      title: "Verified Profile",
+      copy: "Neha brings a fresh, friendly style for clients looking for discreet and comfortable companion availability."
+    }
+  ];
+
   const organizationJsonLd = {
     "@context": "https://schema.org",
     "@type": "Organization",
@@ -119,6 +146,81 @@ export default function Home() {
           <div className="badge-item">
             <ShieldCheck size={18} />
             <span>Cash on Delivery</span>
+          </div>
+        </div>
+      </section>
+
+      {/* Girls Profile Cards */}
+      <section className="section" id="profiles-preview">
+        <div className="shell">
+          <div className="center-header">
+            <span className="eyebrow">Verified Girls</span>
+            <h2>Premium Escort Services in Udaipur | Call Girls Available</h2>
+            <p className="subtitle">
+              Select from short profile previews and contact support for latest verified availability in Udaipur.
+            </p>
+          </div>
+
+          <div className="girls-card-grid">
+            {girlsCards.map((girl) => (
+              <article className="girl-card" key={girl.name}>
+                <div className="girl-image-wrap">
+                  <Image
+                    src={girl.image}
+                    alt={`${girl.name} Udaipur verified companion profile`}
+                    width={520}
+                    height={620}
+                    className="girl-card-image"
+                  />
+                  <span className="girl-rating"><Star size={14} /> {girl.rating}</span>
+                  <span className="girl-age">{girl.age}</span>
+                </div>
+                <div className="girl-card-body">
+                  <h3>{girl.name} - <span>{girl.title}</span></h3>
+                  <p>{girl.copy}</p>
+                  <div className="girl-card-meta">
+                    <span><Award size={15} /> Verified 18+</span>
+                    <Link href="/profiles">View Profile</Link>
+                  </div>
+                  <div className="girl-card-actions">
+                    <Link href={`https://wa.me/${siteConfig.whatsapp}`} className="button girl-whatsapp">
+                      <MessageCircle size={16} /> WhatsApp
+                    </Link>
+                    <Link href={`tel:${siteConfig.phone}`} className="button girl-call">
+                      <Phone size={16} /> Call Now
+                    </Link>
+                  </div>
+                </div>
+              </article>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Homepage Gallery */}
+      <section className="section alt" id="gallery">
+        <div className="shell">
+          <div className="center-header">
+            <span className="eyebrow">Gallery</span>
+            <h2>Girls Gallery Images in Udaipur</h2>
+            <p className="subtitle">
+              Browse premium companion gallery previews before checking current booking availability.
+            </p>
+          </div>
+
+          <div className="homepage-gallery-grid">
+            {profileImages.slice(0, 8).map((image, index) => (
+              <Link href="/profiles" className="gallery-tile" key={image}>
+                <Image
+                  src={image}
+                  alt={`Premium Udaipur girls gallery image ${index + 1}`}
+                  width={420}
+                  height={540}
+                  className="gallery-image"
+                />
+                <span>Verified 18+</span>
+              </Link>
+            ))}
           </div>
         </div>
       </section>
@@ -227,7 +329,7 @@ export default function Home() {
       </section>
 
       {/* Verified Profiles & Premium Companionship */}
-      <section className="section alt">
+      <section className="section alt" id="areas">
         <div className="shell grid-2">
           {/* Verified Profiles */}
           <div className="content-panel">
@@ -276,7 +378,7 @@ export default function Home() {
       </section>
 
       {/* Expanded VIP & Russian Escort Info (New Content block for better ranking) */}
-      <section className="section">
+      <section className="section" id="services">
         <div className="shell grid-2">
           <div className="editorial-card-v3">
             <Sparkles size={24} className="gold-text" />
