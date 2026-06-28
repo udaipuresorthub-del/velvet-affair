@@ -19,6 +19,18 @@ import {
 } from "lucide-react";
 import { InquiryForm } from "@/components/InquiryForm";
 import { profileImages, serviceAreas, siteConfig } from "@/lib/site";
+import { blogPosts } from "@/lib/blogs";
+import { GirlsCarousel } from "@/components/GirlsCarousel";
+
+function getIndianDateString() {
+  const utcDate = new Date();
+  const istOffset = 5.5 * 60 * 60 * 1000;
+  const istDate = new Date(utcDate.getTime() + istOffset);
+  const yyyy = istDate.getUTCFullYear();
+  const mm = String(istDate.getUTCMonth() + 1).padStart(2, '0');
+  const dd = String(istDate.getUTCDate()).padStart(2, '0');
+  return `${yyyy}-${mm}-${dd}`;
+}
 
 export const metadata = {
   title: "Premium Escort Services in Udaipur | Call Girls Udaipur Available Just ₹3999",
@@ -53,8 +65,91 @@ export default function Home() {
       image: "/images/high-class-call-girls-udaipur.jpg",
       title: "Verified Profile",
       copy: "Neha brings a fresh, friendly style for clients looking for discreet and comfortable companion availability."
+    },
+    {
+      name: "Ananya Sen",
+      age: "23 Years",
+      rating: "4.9",
+      image: "/images/beautiful-independent-escort-udaipur.jpg",
+      title: "Independent Model",
+      copy: "Ananya is an independent model offering warm social company, perfect for dinner dates and lakeside walks in Udaipur."
+    },
+    {
+      name: "Sofia Petrova",
+      age: "25 Years",
+      rating: "5.0",
+      image: "/images/russian-escort-in-udaipur.jpg",
+      title: "Russian Escort",
+      copy: "Sofia brings international elegance and elite companionship for premium desert resort stays and high-end hotel meetings."
+    },
+    {
+      name: "Riya Kapoor",
+      age: "22 Years",
+      rating: "4.8",
+      image: "/images/beautiful-model-escort-udaipur.jpg",
+      title: "College Girl Profile",
+      copy: "Riya offers a friendly, cheerful companionship style, ideal for tourists looking to explore Udaipur with a local guide."
+    },
+    {
+      name: "Sana Khan",
+      age: "26 Years",
+      rating: "4.9",
+      image: "/images/classy-escort-service-udaipur.jpg",
+      title: "VIP Escort",
+      copy: "Sana is a sophisticated, well-spoken companion suitable for corporate dinners, high-profile events, and luxury meetings."
+    },
+    {
+      name: "Pooja Malhotra",
+      age: "24 Years",
+      rating: "4.7",
+      image: "/images/elegant-udaipur-escorts.jpg",
+      title: "Verified Escort",
+      copy: "Pooja offers discreet hotel room companionship with focus on comfort, privacy, and friendly interaction."
+    },
+    {
+      name: "Kavya Patel",
+      age: "23 Years",
+      rating: "4.9",
+      image: "/images/high-profile-udaipur-escorts.jpg",
+      title: "Premium Companion",
+      copy: "Kavya is a high-profile companion with excellent social skills, perfect for private resort stays and romantic dining."
+    },
+    {
+      name: "Aditi Rao",
+      age: "22 Years",
+      rating: "4.8",
+      image: "/images/hot-escort-girls-udaipur.jpg",
+      title: "Independent Call Girl",
+      copy: "Aditi provides a warm, relaxed companionship style with flexible booking options and full discretion."
+    },
+    {
+      name: "Elena Gomez",
+      age: "24 Years",
+      rating: "5.0",
+      image: "/images/exclusive-escort-service-udaipur.jpg",
+      title: "Elite Russian Escort",
+      copy: "Elena is a high-profile international companion offering stunning appearance and premium service for resort hotel bookings."
+    },
+    {
+      name: "Meera Joshi",
+      age: "27 Years",
+      rating: "4.8",
+      image: "/images/hot-udaipur-call-girl.jpg",
+      title: "Housewife Companion",
+      copy: "Meera brings a calm, warm, and mature companionship experience for long-term clients seeking comfort and conversation."
+    },
+    {
+      name: "Shruti Sen",
+      age: "21 Years",
+      rating: "4.9",
+      image: "/images/hotel-escort-service-udaipur.jpg",
+      title: "Premium Model",
+      copy: "Shruti is a popular model escort offering charming company, available for luxury hotels and VIP resort booking."
     }
   ];
+
+  const today = getIndianDateString();
+  const publishedBlogs = blogPosts.filter((post) => post.publishDate <= today).slice(0, 3);
 
   const organizationJsonLd = {
     "@context": "https://schema.org",
@@ -247,39 +342,7 @@ export default function Home() {
             </p>
           </div>
 
-          <div className="girls-card-grid">
-            {girlsCards.map((girl) => (
-              <article className="girl-card" key={girl.name}>
-                <div className="girl-image-wrap">
-                  <Image
-                    src={girl.image}
-                    alt={`${girl.name} Udaipur verified companion profile`}
-                    width={520}
-                    height={620}
-                    className="girl-card-image"
-                  />
-                  <span className="girl-rating"><Star size={14} /> {girl.rating}</span>
-                  <span className="girl-age">{girl.age}</span>
-                </div>
-                <div className="girl-card-body">
-                  <h3>{girl.name} - <span>{girl.title}</span></h3>
-                  <p>{girl.copy}</p>
-                  <div className="girl-card-meta">
-                    <span><Award size={15} /> Verified 18+</span>
-                    <Link href="/profiles">View Profile</Link>
-                  </div>
-                  <div className="girl-card-actions">
-                    <Link href={`https://wa.me/${siteConfig.whatsapp}`} className="button girl-whatsapp">
-                      <MessageCircle size={16} /> WhatsApp
-                    </Link>
-                    <Link href={`tel:${siteConfig.phone}`} className="button girl-call">
-                      <Phone size={16} /> Call Now
-                    </Link>
-                  </div>
-                </div>
-              </article>
-            ))}
-          </div>
+          <GirlsCarousel girls={girlsCards} />
         </div>
       </section>
 
@@ -310,6 +373,93 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* Featured Blogs Section */}
+      {publishedBlogs.length > 0 && (
+        <section className="section" id="featured-blogs">
+          <div className="shell">
+            <div className="center-header">
+              <span className="eyebrow">Blogs & Guides</span>
+              <h2>Latest Articles & Booking Guides</h2>
+              <p className="subtitle">
+                Read our latest insights, safety tips, and companion updates in Udaipur.
+              </p>
+            </div>
+
+            <div className="blog-grid" style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(320px, 1fr))", gap: 30 }}>
+              {publishedBlogs.map((post) => (
+                <article key={post.slug} className="blog-card" style={{
+                  background: "var(--bg-card)",
+                  border: "1px solid var(--line)",
+                  borderRadius: 14,
+                  overflow: "hidden",
+                  display: "flex",
+                  flexDirection: "column",
+                  transition: "var(--transition-smooth)"
+                }}>
+                  <Link href={`/blog/${post.slug}`} style={{
+                    position: "relative",
+                    aspectRatio: "16 / 10",
+                    overflow: "hidden",
+                    display: "block"
+                  }}>
+                    <Image
+                      src={post.image}
+                      alt={post.title}
+                      width={480}
+                      height={300}
+                      style={{
+                        width: "100%",
+                        height: "100%",
+                        objectFit: "cover"
+                      }}
+                      className="blog-card-img"
+                    />
+                  </Link>
+                  <div style={{ padding: 24, display: "flex", flexDirection: "column", flexGrow: 1 }}>
+                    <div style={{
+                      display: "inline-flex",
+                      alignItems: "center",
+                      gap: 6,
+                      fontSize: 12,
+                      fontWeight: 700,
+                      color: "var(--gold)",
+                      marginBottom: 10
+                    }}>
+                      <CalendarCheck size={12} />
+                      <span>{post.publishDate}</span>
+                    </div>
+                    <h3 style={{ fontSize: 18, color: "#fff", marginBottom: 12, lineHeight: 1.3 }}>
+                      <Link href={`/blog/${post.slug}`} style={{ color: "#fff" }} className="hover-gold">
+                        {post.title}
+                      </Link>
+                    </h3>
+                    <p style={{ fontSize: 13, color: "var(--muted)", marginBottom: 20, flexGrow: 1, lineHeight: 1.6 }}>
+                      {post.description}
+                    </p>
+                    <Link href={`/blog/${post.slug}`} style={{
+                      display: "inline-flex",
+                      alignItems: "center",
+                      gap: 4,
+                      fontSize: 13,
+                      fontWeight: 800,
+                      color: "var(--gold)"
+                    }} className="hover-underline">
+                      Read Article <ChevronRight size={14} />
+                    </Link>
+                  </div>
+                </article>
+              ))}
+            </div>
+
+            <div style={{ textAlign: "center", marginTop: 40 }}>
+              <Link href="/blog" className="button outline">
+                View All Blog Posts
+              </Link>
+            </div>
+          </div>
+        </section>
+      )}
 
       {/* Quick Overview Table */}
       <section className="section alt">

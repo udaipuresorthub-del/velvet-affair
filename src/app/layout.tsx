@@ -91,6 +91,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             <div className="navlinks">
               <Link href="/#services">Services</Link>
               <Link href="/profiles">Profiles</Link>
+              <Link href="/blog">Blog</Link>
               <Link href="/#areas">Areas</Link>
               <Link href="/#faq">FAQ</Link>
               <Link className="nav-call" href={`tel:${siteConfig.phone}`}>
@@ -136,6 +137,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             </div>
             <div className="footer-col">
               <h3>Legal & Contact</h3>
+              <Link href="/blog">Our Blog</Link>
               <Link href="/privacy">Privacy Policy</Link>
               <Link href="/terms">Terms of Use</Link>
               <span className="flex-center-gap"><Mail size={12} /> {siteConfig.email}</span>
