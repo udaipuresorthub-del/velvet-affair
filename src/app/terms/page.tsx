@@ -1,7 +1,7 @@
 import { siteConfig } from "@/lib/site";
 
 export const metadata = {
-  title: "Terms and Conditions | Udaipur Call Girls Services",
+  title: "Terms and Conditions - Udaipur Call Girls Services",
   description: "Terms and conditions of use for Udaipur Call Girls Services. Essential rules, age criteria, and client requirements for booking adult companions in Udaipur.",
   alternates: {
     canonical: `${siteConfig.url}/terms`

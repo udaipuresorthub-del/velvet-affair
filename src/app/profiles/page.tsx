@@ -3,7 +3,7 @@ import Link from "next/link";
 import { profileImages, siteConfig } from "@/lib/site";
 
 export const metadata = {
-  title: "Reviewed Companion Profiles | Call Girls in Udaipur Preview",
+  title: "Reviewed Companion Profiles - Call Girls in Udaipur Preview",
   description: "Browse our premium companion profiles in Udaipur. Select VIP, independent, model-style, and Russian escort previews starting from ₹3999 with 24x7 support.",
   alternates: {
     canonical: `${siteConfig.url}/profiles`

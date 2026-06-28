@@ -7,7 +7,7 @@ import { Calendar, ChevronRight } from "lucide-react";
 export const dynamic = "force-dynamic";
 
 export const metadata = {
-  title: "Official Blog & Guides | Call Girls Services Udaipur",
+  title: "Official Blog & Guides - Call Girls Services Udaipur",
   description: "Read our official companion guides, adult service directories, and private booking tips in Udaipur.",
   alternates: {
     canonical: `${siteConfig.url}/blog`

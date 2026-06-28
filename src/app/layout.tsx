@@ -16,7 +16,7 @@ const beVietnam = Be_Vietnam_Pro({
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
   applicationName: siteConfig.name,
-  title: "Premium Escort Services in Udaipur | Call Girls Udaipur Available Just ₹3999",
+  title: "Premium Escort Services in Udaipur - Call Girls Udaipur Available Just ₹3999",
   description:
     "Book premium Escort Services in Udaipur with Call Girls Udaipur. Verified Udaipur Escorts, VIP & Russian Escorts from ₹3999. 24x7 cash on delivery, WhatsApp booking.",
   verification: {
@@ -31,7 +31,7 @@ export const metadata: Metadata = {
     canonical: siteConfig.url
   },
   openGraph: {
-    title: "Premium Escort Services in Udaipur | Call Girls Udaipur Just ₹3999",
+    title: "Premium Escort Services in Udaipur - Call Girls Udaipur Just ₹3999",
     description:
       "Book premium Escort Services in Udaipur with Call Girls Udaipur. Verified Udaipur Escorts, VIP & Russian Escorts from ₹3999. 24x7 cash on delivery, WhatsApp booking.",
     url: siteConfig.url,
@@ -42,7 +42,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Premium Escort Services in Udaipur | Call Girls Udaipur Just ₹3999",
+    title: "Premium Escort Services in Udaipur - Call Girls Udaipur Just ₹3999",
     description:
       "Book premium Escort Services in Udaipur with Call Girls Udaipur. Verified Udaipur Escorts, VIP & Russian Escorts from ₹3999. 24x7 cash on delivery, WhatsApp booking.",
     images: ["/images/udaipur-escort-service.jpg"]

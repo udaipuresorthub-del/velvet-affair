@@ -33,7 +33,7 @@ function getIndianDateString() {
 }
 
 export const metadata = {
-  title: "Premium Escort Services in Udaipur | Call Girls Udaipur Available Just ₹3999",
+  title: "Premium Escort Services in Udaipur - Call Girls Udaipur Available Just ₹3999",
   description: "Book premium Escort Services in Udaipur with Call Girls Udaipur. Verified Udaipur Escorts, VIP & Russian Escorts from ₹3999. 24x7 cash on delivery, WhatsApp booking.",
   alternates: {
     canonical: siteConfig.url
@@ -228,7 +228,7 @@ export default function Home() {
   const profileItemListJsonLd = {
     "@context": "https://schema.org",
     "@type": "ItemList",
-    "name": "Premium Escort Services in Udaipur | Call Girls Available",
+    "name": "Premium Escort Services in Udaipur - Call Girls Available",
     "itemListElement": girlsCards.map((girl, index) => ({
       "@type": "ListItem",
       "position": index + 1,
@@ -320,7 +320,7 @@ export default function Home() {
             <Heart size={14} className="icon-pulse" />
             <span className="eyebrow">Udaipur Call Girls Services</span>
           </div>
-          <h1>Premium Escort Services in Udaipur | Call Girls Udaipur Available Just ₹3999</h1>
+          <h1>Premium Escort Services in Udaipur - Call Girls Udaipur Available Just ₹3999</h1>
           <p className="hero-description">
             Welcome to <strong>Girls of Passion</strong>, the premier <strong>Escort Service in Udaipur</strong> offering high-class companionship at affordable rates. If you are looking for elite <strong>Call Girls Udaipur</strong>, our agency coordinates with verified <strong>Udaipur Escorts</strong>, including stunning <strong>VIP Escorts</strong>, international <strong>Russian Escorts</strong>, refined <strong>Independent Call Girls</strong>, young <strong>College Girls</strong>, and discreet <strong>Housewife Escorts</strong>. With our <strong>24x7 Service</strong>, easy <strong>WhatsApp Booking</strong>, and trust-oriented <strong>Cash on Delivery</strong> terms, secure bookings start from just ₹3999. Experience private adult companionship across Udaipur's finest hotels and resorts with complete peace of mind.
           </p>
@@ -362,7 +362,7 @@ export default function Home() {
         <div className="shell">
           <div className="center-header">
             <span className="eyebrow">Verified Girls</span>
-            <h2>Premium Escort Services in Udaipur | Call Girls Available</h2>
+            <h2>Premium Escort Services in Udaipur - Call Girls Available</h2>
             <p className="subtitle">
               Select from short profile previews and contact support for latest verified availability in Udaipur.
             </p>

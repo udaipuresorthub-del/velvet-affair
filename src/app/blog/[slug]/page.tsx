@@ -31,7 +31,7 @@ export async function generateMetadata({ params }: Props) {
   if (post.publishDate > today) return {};
 
   return {
-    title: `${post.title} | Call Girls Services Udaipur`,
+    title: `${post.title} - Call Girls Services Udaipur`,
     description: post.description,
     keywords: post.keywords,
     alternates: {

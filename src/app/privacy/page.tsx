@@ -1,7 +1,7 @@
 import { siteConfig } from "@/lib/site";
 
 export const metadata = {
-  title: "Privacy Policy | Udaipur Call Girls Services",
+  title: "Privacy Policy - Udaipur Call Girls Services",
   description: "Discreet and private data practices. Learn how Udaipur Call Girls Services protects user confidentiality, inquiry details, and respects client preferences.",
   alternates: {
     canonical: `${siteConfig.url}/privacy`
