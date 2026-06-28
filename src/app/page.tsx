@@ -1,14 +1,14 @@
 import Image from "next/image";
 import Link from "next/link";
-import { 
-  CalendarCheck, 
-  CheckCircle2, 
-  LockKeyhole, 
-  MapPin, 
-  ShieldCheck, 
-  Heart, 
-  UserCheck, 
-  Star, 
+import {
+  CalendarCheck,
+  CheckCircle2,
+  LockKeyhole,
+  MapPin,
+  ShieldCheck,
+  Heart,
+  UserCheck,
+  Star,
   Check,
   ChevronRight,
   Phone,
@@ -34,7 +34,7 @@ function getIndianDateString() {
 
 export const metadata = {
   title: "Premium Escort Services in Udaipur | Call Girls Udaipur Available Just ₹3999",
-  description: "Book premium Escort Service in Udaipur with Call Girls Udaipur. Verified Udaipur Escorts, VIP & Russian Escorts from ₹3999. 24x7 cash on delivery, WhatsApp booking.",
+  description: "Book premium Escort Services in Udaipur with Call Girls Udaipur. Verified Udaipur Escorts, VIP & Russian Escorts from ₹3999. 24x7 cash on delivery, WhatsApp booking.",
   alternates: {
     canonical: siteConfig.url
   }
@@ -818,7 +818,7 @@ export default function Home() {
               Browse companion profiles below tailored for hotels, dinners, and events.
             </p>
           </div>
-          
+
           <div className="features-container">
             {/* Local Companion Options */}
             <div className="feature-block-card">

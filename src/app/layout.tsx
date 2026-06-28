@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   applicationName: siteConfig.name,
   title: "Premium Escort Services in Udaipur | Call Girls Udaipur Available Just ₹3999",
   description:
-    "Book premium Escort Service in Udaipur with Call Girls Udaipur. Verified Udaipur Escorts, VIP & Russian Escorts from ₹3999. 24x7 cash on delivery, WhatsApp booking.",
+    "Book premium Escort Services in Udaipur with Call Girls Udaipur. Verified Udaipur Escorts, VIP & Russian Escorts from ₹3999. 24x7 cash on delivery, WhatsApp booking.",
   verification: {
     google: siteConfig.googleVerification
   },
@@ -33,7 +33,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Premium Escort Services in Udaipur | Call Girls Udaipur Just ₹3999",
     description:
-      "Book premium Escort Service in Udaipur with Call Girls Udaipur. Verified Udaipur Escorts, VIP & Russian Escorts from ₹3999. 24x7 cash on delivery, WhatsApp booking.",
+      "Book premium Escort Services in Udaipur with Call Girls Udaipur. Verified Udaipur Escorts, VIP & Russian Escorts from ₹3999. 24x7 cash on delivery, WhatsApp booking.",
     url: siteConfig.url,
     siteName: siteConfig.name,
     images: ["/images/udaipur-escort-service.jpg"],
@@ -44,7 +44,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Premium Escort Services in Udaipur | Call Girls Udaipur Just ₹3999",
     description:
-      "Book premium Escort Service in Udaipur with Call Girls Udaipur. Verified Udaipur Escorts, VIP & Russian Escorts from ₹3999. 24x7 cash on delivery, WhatsApp booking.",
+      "Book premium Escort Services in Udaipur with Call Girls Udaipur. Verified Udaipur Escorts, VIP & Russian Escorts from ₹3999. 24x7 cash on delivery, WhatsApp booking.",
     images: ["/images/udaipur-escort-service.jpg"]
   }
 };
