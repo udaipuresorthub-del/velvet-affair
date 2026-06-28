@@ -209,12 +209,7 @@ export default function Home() {
       "@type": "City",
       "name": "Udaipur"
     },
-    "description": "Premium adult social companionship and escort service in Udaipur coordinating VIP, Russian, and local companion profiles starting from ₹3999.",
-    "aggregateRating": {
-      "@type": "AggregateRating",
-      "ratingValue": "4.9",
-      "reviewCount": "148"
-    }
+    "description": "Premium adult social companionship and escort service in Udaipur coordinating VIP, Russian, and local companion profiles starting from ₹3999."
   };
 
   const websiteJsonLd = {
