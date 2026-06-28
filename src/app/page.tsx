@@ -95,6 +95,80 @@ export default function Home() {
     "priceRange": "INR"
   };
 
+  const websiteJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": siteConfig.name,
+    "url": siteConfig.url,
+    "inLanguage": "en-IN",
+    "publisher": {
+      "@type": "Organization",
+      "name": siteConfig.name,
+      "logo": `${siteConfig.url}/logo.svg`
+    }
+  };
+
+  const profileItemListJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    "name": "Premium Escort Services in Udaipur | Call Girls Available",
+    "itemListElement": girlsCards.map((girl, index) => ({
+      "@type": "ListItem",
+      "position": index + 1,
+      "name": `${girl.name} - ${girl.title}`,
+      "url": `${siteConfig.url}/profiles`,
+      "image": `${siteConfig.url}${girl.image}`,
+      "description": girl.copy
+    }))
+  };
+
+  const faqJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What is Girls of Passion?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Girls of Passion is a professional adult companionship platform in Udaipur for adults who want discreet booking support, verified profiles, and premium companion options."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is Girls of Passion available across Udaipur?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, booking support is available across major Udaipur locations, including Lake Pichola, Fateh Sagar, City Palace area, Hiran Magri, Sukher, Bhuwana, hotels, resorts, and private locations."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How can I book a companion in Udaipur?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "You can browse available profiles and contact the support team through call or WhatsApp. Share your location, timing, and preference to check availability."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is the booking process private?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, the booking process is discreet and confidential. Client privacy is one of our top priorities."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Are the profiles verified?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Girls of Passion focuses on verified and genuine companion profiles to maintain trust, comfort, and service quality."
+        }
+      }
+    ]
+  };
+
   return (
     <main className="main-content">
       <script
@@ -104,6 +178,18 @@ export default function Home() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(businessJsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteJsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(profileItemListJsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
       />
 
       {/* Hero Section */}

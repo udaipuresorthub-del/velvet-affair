@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import type { Viewport } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { Be_Vietnam_Pro } from "next/font/google";
@@ -14,6 +15,7 @@ const beVietnam = Be_Vietnam_Pro({
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
+  applicationName: siteConfig.name,
   title: "Premium Escort Services in Udaipur | Call Girls Udaipur Available Just ₹3999",
   description:
     "Book premium Escort Service in Udaipur with Call Girls Udaipur. Verified Udaipur Escorts, VIP & Russian Escorts from ₹3999. 24x7 cash on delivery, WhatsApp booking.",
@@ -21,7 +23,12 @@ export const metadata: Metadata = {
     google: siteConfig.googleVerification
   },
   icons: {
-    icon: "/favicon.svg"
+    icon: "/favicon.svg",
+    apple: "/favicon.svg"
+  },
+  manifest: "/site.webmanifest",
+  alternates: {
+    canonical: siteConfig.url
   },
   openGraph: {
     title: "Premium Escort Services in Udaipur | Call Girls Udaipur Just ₹3999",
@@ -42,11 +49,23 @@ export const metadata: Metadata = {
   }
 };
 
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+  maximumScale: 5,
+  viewportFit: "cover",
+  themeColor: "#060608",
+  colorScheme: "dark"
+};
+
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en-IN" className={beVietnam.className}>
       <head>
         <meta name="google-site-verification" content={siteConfig.googleVerification} />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-title" content={siteConfig.name} />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
       </head>
       <body>
         <header className="header">

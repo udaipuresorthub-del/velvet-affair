@@ -1521,23 +1521,176 @@ button.gold:hover {
 }
 
 @media (max-width: 600px) {
+  :root {
+    --mobile-safe-bottom: env(safe-area-inset-bottom, 0px);
+  }
+
+  body {
+    background:
+      linear-gradient(180deg, rgba(255, 51, 102, 0.08) 0, transparent 210px),
+      #050507;
+  }
+
+  .shell {
+    width: min(100% - 28px, 430px);
+  }
+
+  .header {
+    border-bottom-color: rgba(255, 255, 255, 0.06);
+    background: rgba(5, 5, 7, 0.78);
+    box-shadow: 0 16px 45px rgba(0, 0, 0, 0.42);
+  }
+
+  .topbar {
+    background: rgba(255, 51, 102, 0.1);
+    border-bottom-color: rgba(255, 255, 255, 0.06);
+  }
+
+  .topbar-inner {
+    min-height: 32px;
+    flex-direction: row;
+    justify-content: center;
+    overflow: hidden;
+    padding: 6px 0;
+    gap: 10px;
+    font-size: 9px;
+    white-space: nowrap;
+  }
+
+  .topbar-inner span:nth-child(2) {
+    display: none;
+  }
+
+  .nav {
+    min-height: 66px;
+    padding: 0 2px;
+  }
+
+  .brand {
+    display: inline-flex;
+    align-items: center;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 16px;
+    background: rgba(255, 255, 255, 0.04);
+    padding: 6px 8px;
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.06);
+  }
+
+  .brand img {
+    height: 36px;
+  }
+
+  .nav-toggle-label {
+    width: 46px;
+    height: 42px;
+    justify-content: center;
+    gap: 5px;
+    border: 1px solid rgba(255, 51, 102, 0.28);
+    border-radius: 14px;
+    background: rgba(255, 51, 102, 0.1);
+    box-shadow: 0 10px 28px rgba(255, 51, 102, 0.16);
+  }
+
+  .nav-toggle-label span {
+    width: 20px;
+    margin: 0 auto;
+    background: #fff;
+  }
+
+  .nav-toggle-input:checked ~ .nav-toggle-label span:nth-child(1) {
+    transform: translateY(7px) rotate(45deg);
+  }
+
+  .nav-toggle-input:checked ~ .nav-toggle-label span:nth-child(3) {
+    transform: translateY(-7px) rotate(-45deg);
+  }
+
+  .navlinks {
+    top: calc(100% + 10px);
+    width: min(100%, calc(100vw - 28px));
+    padding: 18px;
+    gap: 12px;
+    border-radius: 20px;
+    background:
+      linear-gradient(180deg, rgba(24, 20, 25, 0.98), rgba(7, 7, 10, 0.98));
+    border-color: rgba(255, 51, 102, 0.22);
+    box-shadow: 0 22px 60px rgba(0, 0, 0, 0.72), 0 0 34px rgba(255, 51, 102, 0.14);
+  }
+
+  .navlinks a:not(.button) {
+    min-height: 46px;
+    display: flex;
+    align-items: center;
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.035);
+    padding: 0 14px;
+    color: rgba(255, 255, 255, 0.82);
+  }
+
+  .navlinks .nav-call,
+  .navlinks .nav-cta {
+    min-height: 48px;
+    border-radius: 12px;
+  }
+
   .section {
-    padding: 48px 0;
+    padding: 46px 0;
   }
 
   .hero {
-    padding: 60px 0;
-    min-height: auto;
+    min-height: calc(100svh - 98px);
+    align-items: end;
+    padding: 86px 0 34px;
+    border-bottom: 1px solid rgba(255, 51, 102, 0.14);
+    background: #050507;
+  }
+
+  .hero::before {
+    background:
+      linear-gradient(to top, #050507 0%, rgba(5, 5, 7, 0.9) 36%, rgba(5, 5, 7, 0.28) 100%),
+      url("/images/udaipur-escort-service.jpg") center top/cover no-repeat;
+    opacity: 1;
+  }
+
+  .hero::after {
+    background-image:
+      linear-gradient(rgba(255, 255, 255, 0.026) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(255, 255, 255, 0.026) 1px, transparent 1px);
+    background-size: 28px 28px;
+    opacity: 0.45;
+  }
+
+  .hero-content {
+    width: min(100% - 28px, 430px);
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .eyebrow-container {
+    margin-bottom: 14px;
+    padding: 7px 12px;
+    background: rgba(255, 51, 102, 0.13);
+    border-color: rgba(255, 51, 102, 0.32);
+    box-shadow: 0 10px 30px rgba(255, 51, 102, 0.16);
   }
 
   h1 {
-    font-size: 28px;
+    font-size: 31px;
     margin-bottom: 16px;
+    letter-spacing: 0;
+    line-height: 1.08;
   }
 
   h2 {
-    font-size: 22px;
+    font-size: 23px;
     margin-bottom: 12px;
+    letter-spacing: 0;
+  }
+
+  h3 {
+    font-size: 19px;
+    letter-spacing: 0;
   }
 
   p {
@@ -1545,16 +1698,143 @@ button.gold:hover {
     line-height: 1.65;
   }
 
-  .premium-box {
-    padding: 24px;
+  .hero-description {
+    max-height: 210px;
+    overflow: hidden;
+    color: rgba(255, 255, 255, 0.82);
+    font-size: 13px;
+    line-height: 1.62;
+    margin-bottom: 20px;
+    mask-image: linear-gradient(#000 74%, transparent);
+    -webkit-mask-image: linear-gradient(#000 74%, transparent);
   }
 
-  .topbar-inner {
-    flex-direction: column;
-    align-items: center;
-    padding: 8px 0;
-    gap: 6px;
-    font-size: 10px;
+  .hero-actions {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    gap: 10px;
+  }
+
+  .button,
+  button {
+    min-height: 46px;
+    border-radius: 14px;
+    padding: 11px 14px;
+  }
+
+  .button.gold,
+  button.gold {
+    color: #fff;
+    box-shadow: 0 12px 32px rgba(255, 51, 102, 0.34);
+  }
+
+  .trust-badges-bar {
+    padding: 16px 0;
+    background: #08080c;
+    border-color: rgba(255, 51, 102, 0.12);
+  }
+
+  .badges-grid {
+    display: flex;
+    gap: 10px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    padding-bottom: 2px;
+  }
+
+  .badge-item {
+    min-width: 154px;
+    justify-content: flex-start;
+    scroll-snap-align: start;
+    border-radius: 14px;
+    background: rgba(255, 255, 255, 0.045);
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.05);
+  }
+
+  .center-header {
+    text-align: left;
+    margin-bottom: 24px;
+  }
+
+  .center-header .eyebrow {
+    display: inline-flex;
+    margin-bottom: 8px;
+  }
+
+  .girls-card-grid {
+    display: flex;
+    gap: 16px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    padding: 2px 0 8px;
+  }
+
+  .girl-card {
+    min-width: min(86vw, 360px);
+    scroll-snap-align: center;
+    border-radius: 22px;
+    background:
+      linear-gradient(180deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.015)),
+      var(--bg-card);
+    box-shadow: 0 22px 50px rgba(0, 0, 0, 0.42);
+  }
+
+  .girl-image-wrap {
+    aspect-ratio: 4 / 4.15;
+  }
+
+  .girl-card-body {
+    padding: 18px;
+  }
+
+  .girl-card-body h3 {
+    font-size: 18px;
+  }
+
+  .girl-card-meta {
+    align-items: flex-start;
+    margin: 16px 0;
+  }
+
+  .girl-card-actions {
+    gap: 8px;
+  }
+
+  .homepage-gallery-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+  }
+
+  .gallery-tile {
+    border-radius: 18px;
+    box-shadow: 0 16px 38px rgba(0, 0, 0, 0.34);
+  }
+
+  .premium-box,
+  .feature-block-card,
+  .step-card,
+  .overview-table-v2,
+  .faq-details-v2,
+  .form-container-pane,
+  .booking-cta-panel,
+  .cta-phone-card,
+  .cta-wa-card {
+    border-radius: 18px;
+    background:
+      linear-gradient(180deg, rgba(255, 255, 255, 0.045), rgba(255, 255, 255, 0.015)),
+      var(--bg-card);
+    border-color: rgba(255, 51, 102, 0.16);
+    box-shadow: 0 16px 42px rgba(0, 0, 0, 0.28);
+  }
+
+  .premium-box,
+  .feature-block-card {
+    padding: 22px;
+  }
+
+  .booking-cta-panel {
+    padding: 22px;
   }
   
   .media-grid,
@@ -1590,25 +1870,29 @@ button.gold:hover {
   }
   
   .footer {
-    padding-bottom: 110px;
+    padding: 54px 0 calc(112px + var(--mobile-safe-bottom));
+  }
+
+  .footer-brand p {
+    max-width: none;
   }
   
   /* Show sticky mobile bar */
   .mobile-sticky-actions {
     position: fixed;
-    bottom: 16px;
-    left: 16px;
-    right: 16px;
-    height: 62px;
+    bottom: calc(12px + var(--mobile-safe-bottom));
+    left: 14px;
+    right: 14px;
+    height: 66px;
     z-index: 999;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 12px;
-    background: rgba(10, 10, 15, 0.88);
-    border: 1.5px solid rgba(255, 51, 102, 0.25);
-    border-radius: 14px;
-    padding: 8px;
-    box-shadow: 0 10px 30px rgba(255, 51, 102, 0.2);
+    gap: 10px;
+    background: rgba(8, 8, 12, 0.82);
+    border: 1.5px solid rgba(255, 51, 102, 0.28);
+    border-radius: 22px;
+    padding: 9px;
+    box-shadow: 0 18px 48px rgba(0, 0, 0, 0.5), 0 0 34px rgba(255, 51, 102, 0.18);
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
   }
@@ -1618,7 +1902,7 @@ button.gold:hover {
     align-items: center;
     justify-content: center;
     gap: 8px;
-    border-radius: 10px;
+    border-radius: 16px;
     font-weight: 800;
     font-size: 13px;
     color: #fff;
@@ -1627,7 +1911,7 @@ button.gold:hover {
   
   .mobile-call-sticky {
     background: var(--gold-gradient);
-    color: #080602 !important;
+    color: #fff !important;
   }
   
   .mobile-wa-sticky {

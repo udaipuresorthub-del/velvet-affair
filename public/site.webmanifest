@@ -1,0 +1,19 @@
+{
+  "name": "Udaipur Call Girls Services",
+  "short_name": "Udaipur Escorts",
+  "description": "Premium Escort Services in Udaipur with verified companion profiles, 24x7 support, call and WhatsApp booking.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#060608",
+  "theme_color": "#060608",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
