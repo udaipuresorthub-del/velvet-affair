@@ -5,7 +5,7 @@ export const siteConfig = {
   phone: "+91 8000253680",
   whatsapp: "918000253680",
   email: "Royalkingclub007@gmail.com",
-  googleVerification: "LgxMHXDElekea4Mpw6ESM2rSgpwxIeyDNfcXkakLnbE"
+  googleVerification: "UeWSoibDjJBxDB67lLRlic8ANwEM82LEj_X302BEvPI"
 };
 
 export const serviceAreas = [
