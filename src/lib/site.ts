@@ -1,7 +1,7 @@
 export const siteConfig = {
   name: "Udaipur Call Girls Services",
   city: "Udaipur",
-  url: "https://udaipurcallgirlservices.com",
+  url: "https://udaipurcallgirlsservices.com",
   phone: "+91 8000253680",
   whatsapp: "918000253680",
   email: "Royalkingclub007@gmail.com",

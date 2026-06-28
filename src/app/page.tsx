@@ -187,7 +187,34 @@ export default function Home() {
       "latitude": 24.5854,
       "longitude": 73.7125
     },
-    "priceRange": "INR"
+    "priceRange": "INR",
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.9",
+      "reviewCount": "148"
+    }
+  };
+
+  const serviceJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "Premium Adult Companionship & Escort Service",
+    "provider": {
+      "@type": "LocalBusiness",
+      "name": siteConfig.name,
+      "url": siteConfig.url
+    },
+    "serviceType": "Adult Companionship",
+    "areaServed": {
+      "@type": "City",
+      "name": "Udaipur"
+    },
+    "description": "Premium adult social companionship and escort service in Udaipur coordinating VIP, Russian, and local companion profiles starting from ₹3999.",
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.9",
+      "reviewCount": "148"
+    }
   };
 
   const websiteJsonLd = {
@@ -273,6 +300,10 @@ export default function Home() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(businessJsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceJsonLd) }}
       />
       <script
         type="application/ld+json"
