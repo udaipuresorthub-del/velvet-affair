@@ -245,15 +245,15 @@ export default function Home() {
     "mainEntity": [
       {
         "@type": "Question",
-        "name": "What is Girls of Passion?",
+        "name": "What is Udaipur Call Girls Services?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Girls of Passion is a professional adult companionship platform in Udaipur for adults who want discreet booking support, verified profiles, and premium companion options."
+          "text": "Udaipur Call Girls Services is a professional adult companionship platform in Udaipur for adults who want discreet booking support, verified profiles, and premium companion options."
         }
       },
       {
         "@type": "Question",
-        "name": "Is Girls of Passion available across Udaipur?",
+        "name": "Is Udaipur Call Girls Services available across Udaipur?",
         "acceptedAnswer": {
           "@type": "Answer",
           "text": "Yes, booking support is available across major Udaipur locations, including Lake Pichola, Fateh Sagar, City Palace area, Hiran Magri, Sukher, Bhuwana, hotels, resorts, and private locations."
@@ -280,7 +280,7 @@ export default function Home() {
         "name": "Are the profiles verified?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Girls of Passion focuses on verified and genuine companion profiles to maintain trust, comfort, and service quality."
+          "text": "Udaipur Call Girls Services focuses on verified and genuine companion profiles to maintain trust, comfort, and service quality."
         }
       }
     ]
@@ -322,7 +322,7 @@ export default function Home() {
           </div>
           <h1>Premium Escort Services in Udaipur - Call Girls Udaipur Available Just ₹3999</h1>
           <p className="hero-description">
-            Welcome to <strong>Girls of Passion</strong>, the premier <strong>Escort Service in Udaipur</strong> offering high-class companionship at affordable rates. If you are looking for elite <strong>Call Girls Udaipur</strong>, our agency coordinates with verified <strong>Udaipur Escorts</strong>, including stunning <strong>VIP Escorts</strong>, international <strong>Russian Escorts</strong>, refined <strong>Independent Call Girls</strong>, young <strong>College Girls</strong>, and discreet <strong>Housewife Escorts</strong>. With our <strong>24x7 Service</strong>, easy <strong>WhatsApp Booking</strong>, and trust-oriented <strong>Cash on Delivery</strong> terms, secure bookings start from just ₹3999. Experience private adult companionship across Udaipur's finest hotels and resorts with complete peace of mind.
+            Welcome to <strong>Udaipur Call Girls Services</strong>, the premier <strong>Escort Service in Udaipur</strong> offering high-class companionship at affordable rates. If you are looking for elite <strong>Call Girls Udaipur</strong>, our agency coordinates with verified <strong>Udaipur Escorts</strong>, including stunning <strong>VIP Escorts</strong>, international <strong>Russian Escorts</strong>, refined <strong>Independent Call Girls</strong>, young <strong>College Girls</strong>, and discreet <strong>Housewife Escorts</strong>. With our <strong>24x7 Service</strong>, easy <strong>WhatsApp Booking</strong>, and trust-oriented <strong>Cash on Delivery</strong> terms, secure bookings start from just ₹3999. Experience private adult companionship across Udaipur's finest hotels and resorts with complete peace of mind.
           </p>
           <div className="hero-actions">
             <Link className="button gold" href="#contact">
@@ -551,10 +551,10 @@ export default function Home() {
         <div className="shell grid-2">
           {/* Why Choose Us */}
           <div className="premium-box">
-            <div className="eyebrow">Why Girls of Passion</div>
-            <h3>Why Choose Girls of Passion for Udaipur Escort Service?</h3>
+            <div className="eyebrow">Why Udaipur Call Girls Services</div>
+            <h3>Why Choose Udaipur Call Girls Services for Udaipur Escort Service?</h3>
             <p className="box-desc">
-              Choosing the right Udaipur escort service is important because clients expect trust, privacy, genuine profiles, and professional coordination. In a popular tourist city like Udaipur, many people look for premium companionship, but not every platform provides the same level of reliability and confidentiality. Girls of Passion focuses on creating a smooth and comfortable experience from the first inquiry to final confirmation.
+              Choosing the right Udaipur escort service is important because clients expect trust, privacy, genuine profiles, and professional coordination. In a popular tourist city like Udaipur, many people look for premium companionship, but not every platform provides the same level of reliability and confidentiality. Udaipur Call Girls Services focuses on creating a smooth and comfortable experience from the first inquiry to final confirmation.
             </p>
             <ul className="gold-bullet-list">
               <li><Check size={16} /> Verified and genuine companion profiles</li>
@@ -574,7 +574,7 @@ export default function Home() {
             <div className="eyebrow">Our Difference</div>
             <h3>Best Escort Services Udaipur – What Makes Us Different?</h3>
             <p className="box-desc">
-              Girls of Passion is focused on delivering one of the best escort services Udaipur experiences through quality, privacy, and professional support. We believe that a premium companionship service should not only provide availability but also ensure a smooth, respectful, and confidential experience.
+              Udaipur Call Girls Services is focused on delivering one of the best escort services Udaipur experiences through quality, privacy, and professional support. We believe that a premium companionship service should not only provide availability but also ensure a smooth, respectful, and confidential experience.
             </p>
             <ul className="gold-bullet-list">
               <li><Check size={16} /> Carefully reviewed profiles</li>
@@ -598,7 +598,7 @@ export default function Home() {
             <span className="eyebrow">Verified & Genuine</span>
             <h3>Udaipur Escorts Service with Verified and Genuine Profiles</h3>
             <p>
-              A professional Udaipur escorts service should offer genuine profiles, clear communication, and privacy protection. At Girls of Passion, we understand that clients want confidence before booking. That is why we focus on verified profiles and professional coordination.
+              A professional Udaipur escorts service should offer genuine profiles, clear communication, and privacy protection. At Udaipur Call Girls Services, we understand that clients want confidence before booking. That is why we focus on verified profiles and professional coordination.
             </p>
             <div className="checklist-grid">
               <span className="check-item"><CheckCircle2 size={16} /> Authenticity</span>
@@ -619,7 +619,7 @@ export default function Home() {
             <span className="eyebrow">Elite Matches</span>
             <h3>Premium Adult Companionship in Udaipur</h3>
             <p>
-              Udaipur is a luxury destination, and many clients expect a refined companionship experience that matches the city’s charm. Girls of Passion offers premium adult companionship for clients who prefer elegance, privacy, and smooth communication.
+              Udaipur is a luxury destination, and many clients expect a refined companionship experience that matches the city’s charm. Udaipur Call Girls Services offers premium adult companionship for clients who prefer elegance, privacy, and smooth communication.
             </p>
             <div className="suitability-tag-grid">
               <span className="tag-item">Dinner dates</span>
@@ -725,7 +725,7 @@ export default function Home() {
             <span className="eyebrow">Booking Guide</span>
             <h2>Call and WhatsApp Booking Process</h2>
             <p className="subtitle">
-              Booking with Girls of Passion is simple, fast, and discreet. Our website and support process are designed for adults who want easy access and clear communication.
+              Booking with Udaipur Call Girls Services is simple, fast, and discreet. Our website and support process are designed for adults who want easy access and clear communication.
             </p>
           </div>
           <div className="booking-steps-grid">
@@ -769,7 +769,7 @@ export default function Home() {
             <span className="eyebrow">Confidentiality</span>
             <h3>Private and Discreet Udaipur Escort Service</h3>
             <p className="box-desc">
-              Privacy is one of the most important factors when choosing a Udaipur escort service. At Girls of Passion, confidentiality is always a top priority. We understand that clients want their personal details, communication, and booking information to remain private.
+              Privacy is one of the most important factors when choosing a Udaipur escort service. At Udaipur Call Girls Services, confidentiality is always a top priority. We understand that clients want their personal details, communication, and booking information to remain private.
             </p>
             <ul className="gold-bullet-list">
               <li><Check size={16} /> Secure communication</li>
@@ -789,7 +789,7 @@ export default function Home() {
             <span className="eyebrow">Discreet Booking</span>
             <h3>Trusted Udaipur Call Girls Services</h3>
             <p className="box-desc">
-              Many clients search for terms like call girl Udaipur, Udaipur call girl, call girls service Udaipur, or top call girls service in Udaipur when looking for adult companionship online. At Girls of Passion, we present this service in a more professional, respectful, and privacy-focused way.
+              Many clients search for terms like call girl Udaipur, Udaipur call girl, call girls service Udaipur, or top call girls service in Udaipur when looking for adult companionship online. At Udaipur Call Girls Services, we present this service in a more professional, respectful, and privacy-focused way.
             </p>
             <ul className="gold-bullet-list">
               <li><Check size={16} /> Verified companion profiles</li>
@@ -824,7 +824,7 @@ export default function Home() {
             <div className="feature-block-card">
               <h3>Local Udaipur Companion Options</h3>
               <p>
-                Girls of Passion also provides local companion options for clients who prefer someone familiar with the city lifestyle. Local companions can be suitable for relaxed meetings, city outings, private social company, and comfortable companionship experiences.
+                Udaipur Call Girls Services also provides local companion options for clients who prefer someone familiar with the city lifestyle. Local companions can be suitable for relaxed meetings, city outings, private social company, and comfortable companionship experiences.
               </p>
               <ul className="minimal-bullet-list">
                 <li><ChevronRight size={14} /> Residents of Udaipur</li>
@@ -839,7 +839,7 @@ export default function Home() {
             <div className="feature-block-card">
               <h3>Model and Premium Companion Profiles</h3>
               <p>
-                For clients who prefer stylish, modern, and well-presented profiles, Girls of Passion offers model and premium companion categories. These profiles are suitable for clients looking for confidence, elegance, and a polished social presence.
+                For clients who prefer stylish, modern, and well-presented profiles, Udaipur Call Girls Services offers model and premium companion categories. These profiles are suitable for clients looking for confidence, elegance, and a polished social presence.
               </p>
               <ul className="minimal-bullet-list">
                 <li><ChevronRight size={14} /> Luxury hotel meetings</li>
@@ -855,7 +855,7 @@ export default function Home() {
             <div className="feature-block-card">
               <h3>24x7 Udaipur Escort Service Support</h3>
               <p>
-                Girls of Passion offers 24x7 booking support for adults looking for private companionship in Udaipur. Whether you need help during the day, evening, or late night, our support team aims to respond quickly and professionally.
+                Udaipur Call Girls Services offers 24x7 booking support for adults looking for private companionship in Udaipur. Whether you need help during the day, evening, or late night, our support team aims to respond quickly and professionally.
               </p>
               <ul className="minimal-bullet-list">
                 <li><ChevronRight size={14} /> Profile availability</li>
@@ -871,7 +871,7 @@ export default function Home() {
             <div className="feature-block-card">
               <h3>Transparent Pricing and Clear Communication</h3>
               <p>
-                A reliable escort service Udaipur should always provide clear information before booking. At Girls of Passion, we believe in transparent communication so that clients can make informed decisions.
+                A reliable escort service Udaipur should always provide clear information before booking. At Udaipur Call Girls Services, we believe in transparent communication so that clients can make informed decisions.
               </p>
               <ul className="minimal-bullet-list">
                 <li><ChevronRight size={14} /> Companion category</li>
@@ -887,7 +887,7 @@ export default function Home() {
             <div className="feature-block-card">
               <h3>Affordable Premium Companionship in Udaipur</h3>
               <p>
-                Girls of Passion aims to provide a premium companionship experience with flexible options. We understand that different clients have different preferences and budgets, so our platform offers multiple companion categories.
+                Udaipur Call Girls Services aims to provide a premium companionship experience with flexible options. We understand that different clients have different preferences and budgets, so our platform offers multiple companion categories.
               </p>
               <ul className="minimal-bullet-list">
                 <li><ChevronRight size={14} /> Clear pricing details</li>
@@ -903,7 +903,7 @@ export default function Home() {
             <div className="feature-block-card">
               <h3>Hotel and Resort Companionship in Udaipur</h3>
               <p>
-                Udaipur is famous for its luxury hotels, lake-view resorts, villas, and royal hospitality. Many travellers visit the city for holidays, weddings, business trips, and romantic getaways. Girls of Passion provides discreet companionship booking support for clients staying at hotels and resorts.
+                Udaipur is famous for its luxury hotels, lake-view resorts, villas, and royal hospitality. Many travellers visit the city for holidays, weddings, business trips, and romantic getaways. Udaipur Call Girls Services provides discreet companionship booking support for clients staying at hotels and resorts.
               </p>
               <ul className="minimal-bullet-list">
                 <li><ChevronRight size={14} /> Dinner dates</li>
@@ -926,7 +926,7 @@ export default function Home() {
             <span className="eyebrow">Rules</span>
             <h3>Adult-Only Service with Respectful Guidelines</h3>
             <p className="box-desc">
-              Girls of Passion is strictly for adults aged 18 years and above. Clients must communicate respectfully and follow all applicable local laws and platform guidelines.
+              Udaipur Call Girls Services is strictly for adults aged 18 years and above. Clients must communicate respectfully and follow all applicable local laws and platform guidelines.
             </p>
             <ul className="gold-bullet-list">
               <li><Check size={16} /> Adult-only access</li>
@@ -947,7 +947,7 @@ export default function Home() {
             <span className="eyebrow">Platform Details</span>
             <h3>Udaipur Call Girls Service and Private Companion Booking</h3>
             <p className="box-desc">
-              Clients often search for Udaipur call girls service, best call girls service in Udaipur, or top call girls service in Udaipur when looking for private adult companionship. Girls of Passion offers a more reliable and professional platform where adults can check verified profiles and get booking support with privacy.
+              Clients often search for Udaipur call girls service, best call girls service in Udaipur, or top call girls service in Udaipur when looking for private adult companionship. Udaipur Call Girls Services offers a more reliable and professional platform where adults can check verified profiles and get booking support with privacy.
             </p>
             <ul className="gold-bullet-list">
               <li><Check size={16} /> Quick call and WhatsApp support</li>
@@ -972,10 +972,10 @@ export default function Home() {
             <span className="eyebrow font-gold">Why Privacy Matters</span>
             <h3>Why Privacy Matters in Udaipur Companionship Services</h3>
             <p>
-              Privacy is essential in adult companionship. Clients want assurance that their identity and booking details will remain confidential. Girls of Passion follows a discreet process to make every interaction private and comfortable.
+              Privacy is essential in adult companionship. Clients want assurance that their identity and booking details will remain confidential. Udaipur Call Girls Services follows a discreet process to make every interaction private and comfortable.
             </p>
             <p>
-              We do not make the booking process complicated. Our team only asks for the details required to check availability and coordinate the booking. Every step is handled with professionalism, respect, and confidentiality. This privacy-first approach makes Girls of Passion a dependable choice for adults looking for a premium Udaipur escort service.
+              We do not make the booking process complicated. Our team only asks for the details required to check availability and coordinate the booking. Every step is handled with professionalism, respect, and confidentiality. This privacy-first approach makes Udaipur Call Girls Services a dependable choice for adults looking for a premium Udaipur escort service.
             </p>
           </div>
 
@@ -983,7 +983,7 @@ export default function Home() {
             <span className="eyebrow font-gold">Elite Experiences</span>
             <h3>Experience Premium Companionship in Udaipur Today</h3>
             <p>
-              If you are looking for a trusted and premium Udaipur escort service, Girls of Passion is here to assist you with verified profiles, fast booking support, and complete privacy. Our platform offers multiple companion categories, including premium, VIP, model, independent-style, and local companion options.
+              If you are looking for a trusted and premium Udaipur escort service, Udaipur Call Girls Services is here to assist you with verified profiles, fast booking support, and complete privacy. Our platform offers multiple companion categories, including premium, VIP, model, independent-style, and local companion options.
             </p>
             <p>
               Whether you are searching for best escort services Udaipur, VIP escort services Udaipur, escort service Udaipur, or a private companion near you, our team can help you find suitable available options based on your preference.
@@ -999,7 +999,7 @@ export default function Home() {
             <span className="eyebrow text-dark">Get Started</span>
             <h2 className="text-dark">Book Udaipur Escort Service Now</h2>
             <p className="text-dark-muted">
-              Ready to explore a premium adult companionship experience in Udaipur? Contact Girls of Passion for discreet support, verified profiles, and smooth booking assistance.
+              Ready to explore a premium adult companionship experience in Udaipur? Contact Udaipur Call Girls Services for discreet support, verified profiles, and smooth booking assistance.
             </p>
             <ul className="dark-bullet-list">
               <li><Check size={16} /> Call now for availability</li>
@@ -1057,13 +1057,13 @@ export default function Home() {
           </div>
           <div className="faq-grid-v2">
             <details className="faq-details-v2" open>
-              <summary className="faq-summary-v2">What is Girls of Passion?</summary>
+              <summary className="faq-summary-v2">What is Udaipur Call Girls Services?</summary>
               <div className="faq-content-v2">
-                <p>Girls of Passion is a professional adult companionship platform in Udaipur for adults who want discreet booking support, verified profiles, and premium companion options.</p>
+                <p>Udaipur Call Girls Services is a professional adult companionship platform in Udaipur for adults who want discreet booking support, verified profiles, and premium companion options.</p>
               </div>
             </details>
             <details className="faq-details-v2">
-              <summary className="faq-summary-v2">Is Girls of Passion available across Udaipur?</summary>
+              <summary className="faq-summary-v2">Is Udaipur Call Girls Services available across Udaipur?</summary>
               <div className="faq-content-v2">
                 <p>Yes, booking support is available across major Udaipur locations, including Lake Pichola, Fateh Sagar, City Palace area, Hiran Magri, Sukher, Bhuwana, hotels, resorts, and private locations.</p>
               </div>
@@ -1083,7 +1083,7 @@ export default function Home() {
             <details className="faq-details-v2">
               <summary className="faq-summary-v2">Are the profiles verified?</summary>
               <div className="faq-content-v2">
-                <p>Girls of Passion focuses on verified and genuine companion profiles to maintain trust, comfort, and service quality.</p>
+                <p>Udaipur Call Girls Services focuses on verified and genuine companion profiles to maintain trust, comfort, and service quality.</p>
               </div>
             </details>
             <details className="faq-details-v2">
