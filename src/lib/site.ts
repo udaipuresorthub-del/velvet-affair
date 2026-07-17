@@ -2,8 +2,8 @@ export const siteConfig = {
   name: "Udaipur Call Girls Services",
   city: "Udaipur",
   url: "https://udaipurcallgirlsservices.com",
-  phone: "+91 8000253680",
-  whatsapp: "918000253680",
+  phone: "+91 9549032117",
+  whatsapp: "919549032117",
   email: "Royalkingclub007@gmail.com",
   googleVerification: "UeWSoibDjJBxDB67lLRlic8ANwEM82LEj_X302BEvPI"
 };
@@ -67,7 +67,7 @@ export const trustPoints = [
 export const faqs = [
   {
     question: "How do I secure an escort service in Udaipur?",
-    answer: "You can easily select a profile and get in touch with our team via WhatsApp Booking or a direct phone call at +91 8000253680. We handle all inquiries with absolute privacy."
+    answer: "You can easily select a profile and get in touch with our team via WhatsApp Booking or a direct phone call at +91 9549032117. We handle all inquiries with absolute privacy."
   },
   {
     question: "What are the rates for hiring a call girl Udaipur?",
@@ -103,7 +103,7 @@ export const faqs = [
   },
   {
     question: "What is the contact number for Udaipur call girl service?",
-    answer: "Our official WhatsApp and call contact number is +91 8000253680. You can reach out to us directly for quick bookings and enquiries."
+    answer: "Our official WhatsApp and call contact number is +91 9549032117. You can reach out to us directly for quick bookings and enquiries."
   }
 ];
 
@@ -140,7 +140,7 @@ export const seoContentHtml = `
     
     <h3 id="about-service">1. Premium Adult Companionship & Escort Service in Udaipur</h3>
     
-    <p>Finding a trusted <strong>call girl in Udaipur</strong> is quick and hassle-free through our platform. We offer direct assistance and premium profile coordination. Our service is tailored to match the expectations of elite travellers and local residents. If you need a gorgeous companion for an evening dinner date, a private resort party, or relaxed hotel room companionship, we are here to support you. We provide the official <strong>call girl Udaipur contact number</strong> (+91 8000253680) so that you can get in touch with our booking agents directly.</p>
+    <p>Finding a trusted <strong>call girl in Udaipur</strong> is quick and hassle-free through our platform. We offer direct assistance and premium profile coordination. Our service is tailored to match the expectations of elite travellers and local residents. If you need a gorgeous companion for an evening dinner date, a private resort party, or relaxed hotel room companionship, we are here to support you. We provide the official <strong>call girl Udaipur contact number</strong> (+91 9549032117) so that you can get in touch with our booking agents directly.</p>
     
     <p>Many clients prefer dealing with an <strong>independent call girl Udaipur</strong> because it guarantees a highly personal, respectful, and relaxed social experience. On our site, we provide a preview of <strong>Udaipur call girl with number</strong> details. This allows you to verify that you are receiving a high-quality experience. When you book a <strong>premium call girl in Udaipur</strong>, you choose style, pleasant conversation, and premium social presentation.</p>
     
@@ -164,7 +164,7 @@ export const seoContentHtml = `
         </tr>
         <tr>
           <td>Step 2</td>
-          <td>Send your location, duration, and profile preference to our <strong>escort service Udaipur contact</strong> (+91 8000253680).</td>
+          <td>Send your location, duration, and profile preference to our <strong>escort service Udaipur contact</strong> (+91 9549032117).</td>
           <td>2 Mins</td>
         </tr>
         <tr>
@@ -180,7 +180,7 @@ export const seoContentHtml = `
       </tbody>
     </table>
     
-    <p>Using our <strong>Udaipur call girl enquiry</strong> system helps us match you with the right companion based on your exact location and schedule. Whether you need a companion immediately or want to schedule a booking for later, we recommend keeping our <strong>call girl in Udaipur contact</strong> details handy. You can reach out to us at +91 8000253680 for instant verification and quick coordination.</p>
+    <p>Using our <strong>Udaipur call girl enquiry</strong> system helps us match you with the right companion based on your exact location and schedule. Whether you need a companion immediately or want to schedule a booking for later, we recommend keeping our <strong>call girl in Udaipur contact</strong> details handy. You can reach out to us at +91 9549032117 for instant verification and quick coordination.</p>
     
     <h3 id="locations">3. Coverage Areas: From Lake Pichola to Fateh Sagar</h3>
     
@@ -200,6 +200,6 @@ export const seoContentHtml = `
     
     <p>We offer a complete <strong>premium escort service Udaipur</strong> package. This includes polite communication, 24x7 customer support, and a highly responsive <strong>escort service Udaipur support</strong> team. We are committed to building long-term relationships with our clients through honesty, reliability, and excellent profile coordination.</p>
     
-    <p>For any details or to clear doubts, feel free to contact our support team. We help you choose from a wide selection of profiles, from young college girls to sophisticated housewives, all trained to provide respectful and enjoyable social company. Contact our <strong>escort service in Udaipur</strong> team today at +91 8000253680 to begin your premium companion experience.</p>
+    <p>For any details or to clear doubts, feel free to contact our support team. We help you choose from a wide selection of profiles, from young college girls to sophisticated housewives, all trained to provide respectful and enjoyable social company. Contact our <strong>escort service in Udaipur</strong> team today at +91 9549032117 to begin your premium companion experience.</p>
   </section>
 `;
