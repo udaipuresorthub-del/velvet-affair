@@ -16,9 +16,9 @@ const dmSans = DM_Sans({
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
   applicationName: siteConfig.name,
-  title: "Premium Udaipur Escort Service - VIP Escort Services in Udaipur just ₹3999",
+  title: "Udaipur Escort Service - Premium Escort Services in Udaipur starting ₹3999",
   description:
-    "Book premium Udaipur Escort Service. Verified escorts in Udaipur, VIP Russian companions, independent models starting at ₹3999. 24x7 Cash on Delivery & WhatsApp Booking.",
+    "Looking for the best escort services in Udaipur? Udaipur Escort Service offers verified call girls in Udaipur, Russian escorts, and VIP companions from ₹3999. Enjoy 100% discretion and Cash on Delivery booking 24/7.",
   verification: {
     google: siteConfig.googleVerification
   },
@@ -31,9 +31,9 @@ export const metadata: Metadata = {
     canonical: siteConfig.url
   },
   openGraph: {
-    title: "Premium Udaipur Escort Service - VIP Escort Services in Udaipur just ₹3999",
+    title: "Udaipur Escort Service - Premium Escort Services in Udaipur starting ₹3999",
     description:
-      "Book premium Udaipur Escort Service. Verified escorts in Udaipur, VIP Russian companions, independent models starting at ₹3999. 24x7 Cash on Delivery & WhatsApp Booking.",
+      "Looking for the best escort services in Udaipur? Udaipur Escort Service offers verified call girls in Udaipur, Russian escorts, and VIP companions from ₹3999. Enjoy 100% discretion and Cash on Delivery booking 24/7.",
     url: siteConfig.url,
     siteName: siteConfig.name,
     images: ["/images/udaipur-escort-service.jpg"],
@@ -42,9 +42,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Premium Udaipur Escort Service - VIP Escort Services in Udaipur just ₹3999",
+    title: "Udaipur Escort Service - Premium Escort Services in Udaipur starting ₹3999",
     description:
-      "Book premium Udaipur Escort Service. Verified escorts in Udaipur, VIP Russian companions, independent models starting at ₹3999. 24x7 Cash on Delivery & WhatsApp Booking.",
+      "Looking for the best escort services in Udaipur? Udaipur Escort Service offers verified call girls in Udaipur, Russian escorts, and VIP companions from ₹3999. Enjoy 100% discretion and Cash on Delivery booking 24/7.",
     images: ["/images/udaipur-escort-service.jpg"]
   }
 };
