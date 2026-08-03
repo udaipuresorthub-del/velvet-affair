@@ -7,7 +7,7 @@ import { Calendar, ChevronRight } from "lucide-react";
 export const dynamic = "force-dynamic";
 
 export const metadata = {
-  title: "Official Blog & Guides - Call Girls Services Udaipur",
+  title: "Official Blog & Guides - Udaipur Escort Service",
   description: "Read our official companion guides, adult service directories, and private booking tips in Udaipur.",
   alternates: {
     canonical: `${siteConfig.url}/blog`
@@ -26,7 +26,9 @@ function getIndianDateString() {
 
 export default function BlogListingPage() {
   const today = getIndianDateString();
-  const publishedPosts = blogPosts.filter((post) => post.publishDate <= today);
+  const publishedPosts = blogPosts
+    .filter((post) => post.publishDate <= today)
+    .sort((a, b) => b.publishDate.localeCompare(a.publishDate));
 
   const breadcrumbJsonLd = {
     "@context": "https://schema.org",

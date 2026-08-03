@@ -18,3 +18,6 @@ extracted_text.txt
 extracted_guide.txt
 extract.js
 extract_guide.js
+
+.vercel
+.env*

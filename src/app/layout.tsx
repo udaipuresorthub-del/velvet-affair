@@ -2,23 +2,23 @@ import type { Metadata } from "next";
 import type { Viewport } from "next";
 import Image from "next/image";
 import Link from "next/link";
-import { Be_Vietnam_Pro } from "next/font/google";
+import { DM_Sans } from "next/font/google";
 import { MessageCircle, Phone, Mail, Clock, MapPin } from "lucide-react";
 import "./globals.css";
 import { serviceAreas, siteConfig } from "@/lib/site";
 
-const beVietnam = Be_Vietnam_Pro({
+const dmSans = DM_Sans({
   subsets: ["latin"],
-  weight: ["300", "400", "500", "600", "700", "800", "900"],
+  weight: ["300", "400", "500", "600", "700", "800", "900", "1000"],
   display: "swap"
 });
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
   applicationName: siteConfig.name,
-  title: "Premium Escort Services in Udaipur - Call Girls Udaipur Available Just ₹3999",
+  title: "Premium Udaipur Escort Service - VIP Escort Services in Udaipur just ₹3999",
   description:
-    "Book premium Escort Services in Udaipur with Call Girls Udaipur. Verified Udaipur Escorts, VIP & Russian Escorts from ₹3999. 24x7 cash on delivery, WhatsApp booking.",
+    "Book premium Udaipur Escort Service. Verified escorts in Udaipur, VIP Russian companions, independent models starting at ₹3999. 24x7 Cash on Delivery & WhatsApp Booking.",
   verification: {
     google: siteConfig.googleVerification
   },
@@ -31,9 +31,9 @@ export const metadata: Metadata = {
     canonical: siteConfig.url
   },
   openGraph: {
-    title: "Premium Escort Services in Udaipur - Call Girls Udaipur Just ₹3999",
+    title: "Premium Udaipur Escort Service - VIP Escort Services in Udaipur just ₹3999",
     description:
-      "Book premium Escort Services in Udaipur with Call Girls Udaipur. Verified Udaipur Escorts, VIP & Russian Escorts from ₹3999. 24x7 cash on delivery, WhatsApp booking.",
+      "Book premium Udaipur Escort Service. Verified escorts in Udaipur, VIP Russian companions, independent models starting at ₹3999. 24x7 Cash on Delivery & WhatsApp Booking.",
     url: siteConfig.url,
     siteName: siteConfig.name,
     images: ["/images/udaipur-escort-service.jpg"],
@@ -42,9 +42,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Premium Escort Services in Udaipur - Call Girls Udaipur Just ₹3999",
+    title: "Premium Udaipur Escort Service - VIP Escort Services in Udaipur just ₹3999",
     description:
-      "Book premium Escort Services in Udaipur with Call Girls Udaipur. Verified Udaipur Escorts, VIP & Russian Escorts from ₹3999. 24x7 cash on delivery, WhatsApp booking.",
+      "Book premium Udaipur Escort Service. Verified escorts in Udaipur, VIP Russian companions, independent models starting at ₹3999. 24x7 Cash on Delivery & WhatsApp Booking.",
     images: ["/images/udaipur-escort-service.jpg"]
   }
 };
@@ -60,7 +60,7 @@ export const viewport: Viewport = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en-IN" className={beVietnam.className}>
+    <html lang="en-IN" className={dmSans.className}>
       <head>
         <meta name="google-site-verification" content={siteConfig.googleVerification} />
         <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -76,8 +76,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             </div>
           </div>
           <nav className="shell nav" aria-label="Main navigation">
-            <Link href="/" className="brand" aria-label="Udaipur Call Girls Services home">
-              <Image src="/logo.svg" alt="Udaipur Call Girls Services Logo" width={300} height={64} priority />
+            <Link href="/" className="brand" aria-label="Udaipur Escort Service home">
+              <Image src="/logo.svg" alt="Udaipur Escort Service Logo" width={300} height={64} priority />
             </Link>
             
             {/* Professional Hamburger Toggle */}
@@ -109,9 +109,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <footer className="footer">
           <div className="shell footer-grid">
             <div className="footer-brand">
-              <Image src="/logo.svg" alt="Udaipur Call Girls Services Footer Logo" width={300} height={64} />
+              <Image src="/logo.svg" alt="Udaipur Escort Service Footer Logo" width={300} height={64} />
               <p>
-                Udaipur's premier adult companionship desk coordinating VIP, Independent, Russian, and local companion profiles. Book starting from ₹3999 with 100% discretion and cash on delivery.
+                Udaipur's premier adult companionship desk coordinating VIP, Independent, Russian, and local escort service profiles. Book starting from ₹3999 with 100% discretion and cash on delivery.
               </p>
               <div className="footer-actions">
                 <Link className="button gold" href={`tel:${siteConfig.phone}`}>
@@ -145,7 +145,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             </div>
           </div>
           <div className="shell footer-bottom">
-            <span>&copy; {new Date().getFullYear()} Udaipur Call Girls Services. All Rights Reserved.</span>
+            <span>&copy; {new Date().getFullYear()} Udaipur Escort Service. All Rights Reserved.</span>
             <span>DISCLAIMER: 18+ adult social companionship desk. We operate in compliance with all local guidelines.</span>
           </div>
         </footer>

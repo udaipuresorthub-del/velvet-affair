@@ -2,6 +2,8 @@ import { MetadataRoute } from "next";
 import { siteConfig } from "@/lib/site";
 import { blogPosts } from "@/lib/blogs";
 
+export const dynamic = "force-dynamic";
+
 function getIndianDateString() {
   const utcDate = new Date();
   const istOffset = 5.5 * 60 * 60 * 1000;

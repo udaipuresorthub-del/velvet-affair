@@ -1,18 +1,19 @@
 :root {
-  --bg-dark: #060608;
-  --bg-card: #0c0c11;
-  --bg-card-hover: #121219;
-  --ink: #f4f4f6;
-  --muted: #a39f97;
-  --line: rgba(255, 51, 102, 0.18);
-  --gold: #ff3366;
-  --gold-glow: rgba(255, 51, 102, 0.35);
-  --gold-gradient: linear-gradient(135deg, #ff668f 0%, #ff3366 50%, #c40b35 100%);
+  --bg-dark: #ffffff;
+  --bg-card: #fdfdfd;
+  --bg-card-hover: #fff3f5;
+  --ink: #1d0b0d;
+  --muted: #685356;
+  --line: rgba(220, 38, 38, 0.12);
+  --gold: #dc2626;
+  --gold-glow: rgba(220, 38, 38, 0.18);
+  --gold-gradient: linear-gradient(135deg, #f43f5e 0%, #dc2626 50%, #991b1b 100%);
   --success: #1b8a4f;
-  --success-bg: rgba(27, 138, 79, 0.12);
-  --error: #ff4d4d;
-  --error-bg: rgba(255, 77, 77, 0.12);
+  --success-bg: rgba(27, 138, 79, 0.08);
+  --error: #dc2626;
+  --error-bg: rgba(220, 38, 38, 0.08);
   --transition-smooth: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  --card-shadow: 0 10px 30px rgba(220, 38, 38, 0.04), 0 1px 3px rgba(0, 0, 0, 0.02);
 }
 
 * {
@@ -60,7 +61,7 @@ img {
   top: 0;
   z-index: 100;
   border-bottom: 1px solid var(--line);
-  background: rgba(6, 6, 8, 0.9);
+  background: rgba(255, 255, 255, 0.85);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
 }
@@ -75,13 +76,13 @@ img {
 }
 
 .topbar {
-  background: #010102;
-  color: rgba(255, 255, 255, 0.85);
+  background: var(--gold-gradient);
+  color: #ffffff;
   font-size: 11px;
   font-weight: 700;
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+  border-bottom: 1px solid var(--line);
 }
 
 .topbar-inner {
@@ -128,7 +129,7 @@ img {
 }
 
 .navlinks > a:not(.button):not(.nav-call):hover {
-  color: #fff;
+  color: var(--gold);
 }
 
 .navlinks > a:not(.button):not(.nav-call)::after {
@@ -172,9 +173,9 @@ img {
   display: grid;
   align-items: center;
   overflow: hidden;
-  background: radial-gradient(circle at 50% -20%, rgba(255, 51, 102, 0.15) 0%, transparent 60%),
-              radial-gradient(circle at 10% 20%, rgba(255, 51, 102, 0.05) 0%, transparent 50%),
-              #030305;
+  background: radial-gradient(circle at 50% -20%, rgba(220, 38, 38, 0.08) 0%, transparent 60%),
+              radial-gradient(circle at 10% 20%, rgba(220, 38, 38, 0.04) 0%, transparent 50%),
+              #ffffff;
   padding: 110px 0 80px;
 }
 
@@ -184,32 +185,32 @@ img {
   position: absolute;
   inset: 0;
   background:
-    linear-gradient(to top, #060608 0%, rgba(6, 6, 8, 0.94) 30%, rgba(6, 6, 8, 0.72) 100%),
+    linear-gradient(to top, #ffffff 0%, rgba(255, 255, 255, 0.94) 30%, rgba(255, 255, 255, 0.72) 100%),
     url("/images/udaipur-escort-service.jpg") center/cover no-repeat;
   z-index: 1;
-  opacity: 0.85;
+  opacity: 0.92;
 }
 
 .hero::after {
   content: "";
   position: absolute;
   inset: 0;
-  background-image: linear-gradient(rgba(255, 255, 255, 0.015) 1.2px, transparent 1.2px),
-                    linear-gradient(90deg, rgba(255, 255, 255, 0.015) 1.2px, transparent 1.2px);
+  background-image: linear-gradient(rgba(220, 38, 38, 0.015) 1.2px, transparent 1.2px),
+                    linear-gradient(90deg, rgba(220, 38, 38, 0.015) 1.2px, transparent 1.2px);
   background-size: 50px 50px;
   background-position: center;
   mask-image: radial-gradient(circle at 50% 50%, black 30%, transparent 80%);
   -webkit-mask-image: radial-gradient(circle at 50% 50%, black 30%, transparent 80%);
   pointer-events: none;
   z-index: 2;
-  opacity: 0.7;
+  opacity: 0.4;
 }
 
 .hero-content {
   position: relative;
   width: min(900px, calc(100% - 32px));
   margin: 0 auto;
-  color: #fff;
+  color: var(--ink);
   z-index: 5;
   display: flex;
   flex-direction: column;
@@ -221,14 +222,14 @@ img {
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  background: rgba(255, 51, 102, 0.08);
-  border: 1px solid rgba(255, 51, 102, 0.25);
+  background: rgba(220, 38, 38, 0.06);
+  border: 1px solid rgba(220, 38, 38, 0.2);
   padding: 8px 18px;
   border-radius: 999px;
   margin-bottom: 24px;
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
-  box-shadow: 0 4px 15px rgba(255, 51, 102, 0.1);
+  box-shadow: 0 4px 15px rgba(220, 38, 38, 0.05);
 }
 
 .icon-pulse {
@@ -259,7 +260,7 @@ h1, h2, h3, h4 {
 h1 {
   font-size: clamp(34px, 5.5vw, 56px);
   margin-bottom: 24px;
-  background: linear-gradient(135deg, #ffffff 20%, #ff8fa3 60%, #ff3366 100%);
+  background: linear-gradient(135deg, #1d0b0d 20%, #c00a27 60%, #dc2626 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -368,13 +369,14 @@ button.gold:hover {
   border-radius: 14px;
   background: var(--bg-card);
   transition: var(--transition-smooth);
+  box-shadow: var(--card-shadow);
 }
 
 .girl-card:hover {
   border-color: var(--gold);
   background: var(--bg-card-hover);
   transform: translateY(-4px);
-  box-shadow: 0 14px 38px rgba(0, 0, 0, 0.42);
+  box-shadow: 0 14px 38px rgba(220, 38, 38, 0.08);
 }
 
 .girl-image-wrap {
@@ -881,7 +883,7 @@ button.gold:hover {
 
 /* Booking CTA Panel */
 .booking-cta-panel {
-  background: linear-gradient(135deg, #111116 0%, #060608 100%);
+  background: linear-gradient(135deg, #fff5f6 0%, #ffffff 100%);
   border: 1px solid var(--line);
   border-radius: 16px;
   padding: 50px;
@@ -889,11 +891,11 @@ button.gold:hover {
   grid-template-columns: 1.2fr 0.8fr;
   gap: 40px;
   align-items: center;
-  box-shadow: 0 15px 40px rgba(0,0,0,0.5);
+  box-shadow: var(--card-shadow);
 }
 
 .text-dark {
-  color: #fff !important;
+  color: var(--ink) !important;
 }
 
 .text-dark-muted {
@@ -914,7 +916,7 @@ button.gold:hover {
   gap: 8px;
   font-size: 13px;
   font-weight: 600;
-  color: #fff;
+  color: var(--ink);
 }
 
 .dark-bullet-list li svg {
@@ -923,8 +925,8 @@ button.gold:hover {
 
 .cta-phone-card,
 .cta-wa-card {
-  background: rgba(255, 255, 255, 0.02);
-  border: 1px solid rgba(255, 255, 255, 0.05);
+  background: rgba(220, 38, 38, 0.02);
+  border: 1px solid rgba(220, 38, 38, 0.08);
   border-radius: 12px;
   padding: 24px;
   display: flex;
@@ -952,7 +954,7 @@ button.gold:hover {
 .wa-link {
   font-size: 20px;
   font-weight: 800;
-  color: #fff;
+  color: var(--ink);
 }
 
 .phone-link:hover {
@@ -1128,10 +1130,10 @@ button.gold:hover {
 .booking-form-v2 input,
 .booking-form-v2 select,
 .booking-form-v2 textarea {
-  background: rgba(255, 255, 255, 0.02);
-  border: 1px solid rgba(255, 255, 255, 0.06);
+  background: #ffffff;
+  border: 1px solid rgba(220, 38, 38, 0.2);
   border-radius: 8px;
-  color: #fff;
+  color: var(--ink);
   padding: 12px 14px;
   font-size: 14px;
   font-family: inherit;
@@ -1143,8 +1145,8 @@ button.gold:hover {
 .booking-form-v2 textarea:focus {
   border-color: var(--gold);
   outline: none;
-  background: rgba(255, 255, 255, 0.04);
-  box-shadow: 0 0 10px rgba(212, 175, 55, 0.15);
+  background: #ffffff;
+  box-shadow: 0 0 10px rgba(220, 38, 38, 0.1);
 }
 
 .booking-form-v2 textarea {
@@ -1481,12 +1483,12 @@ button.gold:hover {
   .navlinks a:not(.button) {
     width: 100%;
     padding-bottom: 10px;
-    border-bottom: 1px dashed rgba(255, 255, 255, 0.08);
+    border-bottom: 1px dashed var(--line);
     color: var(--muted);
   }
   
   .navlinks a:hover {
-    color: #fff;
+    color: var(--gold);
   }
   
   .navlinks .nav-call {
@@ -1494,7 +1496,7 @@ button.gold:hover {
     display: flex;
     justify-content: center;
     border: 1px solid var(--line);
-    background: rgba(255, 51, 102, 0.05);
+    background: rgba(220, 38, 38, 0.04);
     padding: 12px;
     border-radius: 8px;
   }
@@ -1527,8 +1529,8 @@ button.gold:hover {
 
   body {
     background:
-      linear-gradient(180deg, rgba(255, 51, 102, 0.08) 0, transparent 210px),
-      #050507;
+      linear-gradient(180deg, rgba(220, 38, 38, 0.04) 0, transparent 210px),
+      #ffffff;
   }
 
   .shell {
@@ -1536,14 +1538,14 @@ button.gold:hover {
   }
 
   .header {
-    border-bottom-color: rgba(255, 255, 255, 0.06);
-    background: rgba(5, 5, 7, 0.78);
-    box-shadow: 0 16px 45px rgba(0, 0, 0, 0.42);
+    border-bottom-color: var(--line);
+    background: rgba(255, 255, 255, 0.85);
+    box-shadow: 0 10px 30px rgba(220, 38, 38, 0.05);
   }
 
   .topbar {
-    background: rgba(255, 51, 102, 0.1);
-    border-bottom-color: rgba(255, 255, 255, 0.06);
+    background: var(--gold-gradient);
+    border-bottom-color: var(--line);
   }
 
   .topbar-inner {
@@ -1569,11 +1571,11 @@ button.gold:hover {
   .brand {
     display: inline-flex;
     align-items: center;
-    border: 1px solid rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(220, 38, 38, 0.12);
     border-radius: 16px;
-    background: rgba(255, 255, 255, 0.04);
+    background: rgba(220, 38, 38, 0.03);
     padding: 6px 8px;
-    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.06);
+    box-shadow: inset 0 1px 0 rgba(220, 38, 38, 0.05);
   }
 
   .brand img {
@@ -1585,16 +1587,16 @@ button.gold:hover {
     height: 42px;
     justify-content: center;
     gap: 5px;
-    border: 1px solid rgba(255, 51, 102, 0.28);
+    border: 1px solid rgba(220, 38, 38, 0.25);
     border-radius: 14px;
-    background: rgba(255, 51, 102, 0.1);
-    box-shadow: 0 10px 28px rgba(255, 51, 102, 0.16);
+    background: rgba(220, 38, 38, 0.08);
+    box-shadow: 0 10px 28px rgba(220, 38, 38, 0.05);
   }
 
   .nav-toggle-label span {
     width: 20px;
     margin: 0 auto;
-    background: #fff;
+    background: var(--ink);
   }
 
   .nav-toggle-input:checked ~ .nav-toggle-label span:nth-child(1) {
@@ -1612,20 +1614,20 @@ button.gold:hover {
     gap: 12px;
     border-radius: 20px;
     background:
-      linear-gradient(180deg, rgba(24, 20, 25, 0.98), rgba(7, 7, 10, 0.98));
-    border-color: rgba(255, 51, 102, 0.22);
-    box-shadow: 0 22px 60px rgba(0, 0, 0, 0.72), 0 0 34px rgba(255, 51, 102, 0.14);
+      linear-gradient(180deg, rgba(255, 255, 255, 0.98), rgba(253, 245, 246, 0.98));
+    border-color: var(--line);
+    box-shadow: 0 22px 60px rgba(220, 38, 38, 0.08), 0 0 34px rgba(220, 38, 38, 0.04);
   }
 
   .navlinks a:not(.button) {
     min-height: 46px;
     display: flex;
     align-items: center;
-    border: 1px solid rgba(255, 255, 255, 0.06);
+    border: 1px solid var(--line);
     border-radius: 12px;
-    background: rgba(255, 255, 255, 0.035);
+    background: #ffffff;
     padding: 0 14px;
-    color: rgba(255, 255, 255, 0.82);
+    color: var(--ink);
   }
 
   .navlinks .nav-call,
@@ -1821,11 +1823,9 @@ button.gold:hover {
   .cta-phone-card,
   .cta-wa-card {
     border-radius: 18px;
-    background:
-      linear-gradient(180deg, rgba(255, 255, 255, 0.045), rgba(255, 255, 255, 0.015)),
-      var(--bg-card);
-    border-color: rgba(255, 51, 102, 0.16);
-    box-shadow: 0 16px 42px rgba(0, 0, 0, 0.28);
+    background: var(--bg-card);
+    border-color: var(--line);
+    box-shadow: 0 16px 42px rgba(220, 38, 38, 0.04);
   }
 
   .premium-box,
@@ -1888,11 +1888,11 @@ button.gold:hover {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 10px;
-    background: rgba(8, 8, 12, 0.82);
-    border: 1.5px solid rgba(255, 51, 102, 0.28);
+    background: rgba(255, 255, 255, 0.9);
+    border: 1.5px solid rgba(220, 38, 38, 0.25);
     border-radius: 22px;
     padding: 9px;
-    box-shadow: 0 18px 48px rgba(0, 0, 0, 0.5), 0 0 34px rgba(255, 51, 102, 0.18);
+    box-shadow: 0 18px 48px rgba(220, 38, 38, 0.08), 0 0 34px rgba(220, 38, 38, 0.05);
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
   }
