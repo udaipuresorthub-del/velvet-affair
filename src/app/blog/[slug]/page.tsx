@@ -170,7 +170,7 @@ export default async function BlogPostPage({ params }: Props) {
           </div>
 
           <div className="blog-post-content" style={{
-            color: "rgba(255, 255, 255, 0.85)",
+            color: "var(--ink)",
             fontSize: 16,
             lineHeight: 1.8
           }}>
@@ -178,7 +178,7 @@ export default async function BlogPostPage({ params }: Props) {
               <section key={idx} style={{ marginBottom: 34 }}>
                 <h2 style={{
                   fontSize: 22,
-                  color: "#fff",
+                  color: "var(--ink)",
                   marginBottom: 14,
                   borderLeft: "3px solid var(--gold)",
                   paddingLeft: 12
@@ -197,7 +197,7 @@ export default async function BlogPostPage({ params }: Props) {
             textAlign: "center"
           }}>
             <Heart size={30} className="icon-pulse gold-text" style={{ margin: "0 auto 16px" }} />
-            <h3 style={{ color: "#fff", fontSize: 20, marginBottom: 10 }}>Looking for Premium Companionship in Udaipur?</h3>
+            <h3 style={{ color: "var(--ink)", fontSize: 20, marginBottom: 10 }}>Looking for Premium Companionship in Udaipur?</h3>
             <p style={{ fontSize: 14, color: "var(--muted)", marginBottom: 24, maxWidth: 500, marginInline: "auto" }}>
               Book high class call girls and premium VIP escorts in Udaipur starting from ₹3999. Enjoy complete privacy and cash on delivery.
             </p>

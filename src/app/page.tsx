@@ -458,8 +458,8 @@ export default function Home() {
                       <CalendarCheck size={12} />
                       <span>{post.publishDate}</span>
                     </div>
-                    <h3 style={{ fontSize: 18, color: "#fff", marginBottom: 12, lineHeight: 1.3 }}>
-                      <Link href={`/blog/${post.slug}`} style={{ color: "#fff" }} className="hover-gold">
+                    <h3 style={{ fontSize: 18, color: "var(--ink)", marginBottom: 12, lineHeight: 1.3 }}>
+                      <Link href={`/blog/${post.slug}`} style={{ color: "var(--ink)" }} className="hover-gold">
                         {post.title}
                       </Link>
                     </h3>

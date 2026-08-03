@@ -268,7 +268,7 @@ h1 {
 h2 {
   font-size: clamp(26px, 3.8vw, 38px);
   margin-bottom: 16px;
-  color: #fff;
+  color: var(--ink);
 }
 
 h3 {
@@ -280,7 +280,7 @@ h3 {
 h4 {
   font-size: 17px;
   margin-bottom: 8px;
-  color: #fff;
+  color: var(--ink);
 }
 
 p {
@@ -829,9 +829,9 @@ button.gold:hover {
 
 .feature-block-card h3 {
   font-size: 17px;
-  color: #fff;
+  color: var(--ink);
   margin-bottom: 14px;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  border-bottom: 1px solid var(--line);
   padding-bottom: 8px;
 }
 
@@ -854,7 +854,7 @@ button.gold:hover {
   gap: 6px;
   font-size: 13px;
   font-weight: 600;
-  color: rgba(255, 255, 255, 0.95);
+  color: var(--ink);
 }
 
 .minimal-bullet-list li svg {
@@ -868,7 +868,7 @@ button.gold:hover {
 }
 
 .editorial-block h3 {
-  color: #fff;
+  color: var(--ink);
   font-size: 20px;
   margin-bottom: 14px;
 }
@@ -1038,7 +1038,7 @@ button.gold:hover {
   padding: 18px 24px;
   font-weight: 700;
   font-size: 15px;
-  color: #fff;
+  color: var(--ink);
   cursor: pointer;
   list-style: none;
   display: flex;
@@ -1064,8 +1064,8 @@ button.gold:hover {
 
 .faq-content-v2 {
   padding: 0 24px 20px;
-  border-top: 1px solid rgba(255, 255, 255, 0.03);
-  background: rgba(0, 0, 0, 0.15);
+  border-top: 1px solid var(--line);
+  background: rgba(220, 38, 38, 0.02);
 }
 
 .faq-content-v2 p {
@@ -1093,7 +1093,7 @@ button.gold:hover {
   padding: 20px;
   border-radius: 0 8px 8px 0;
   font-size: 14px;
-  color: rgba(255, 255, 255, 0.9);
+  color: var(--ink);
   line-height: 1.6;
   margin-top: 30px;
 }
@@ -1171,7 +1171,7 @@ button.gold:hover {
 .checkbox-text {
   font-size: 13px;
   font-weight: 500;
-  color: rgba(255, 255, 255, 0.8);
+  color: var(--muted);
 }
 
 .status-notice-v2 {
@@ -2065,7 +2065,7 @@ button.gold:hover {
 
 .blog-post-content p {
   margin-bottom: 24px;
-  color: rgba(255, 255, 255, 0.85);
+  color: var(--ink);
   font-size: 15px;
   line-height: 1.8;
 }
