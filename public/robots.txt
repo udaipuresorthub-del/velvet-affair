@@ -1,0 +1,13 @@
+User-agent: *
+Allow: /
+Disallow: /api/
+Disallow: /_next/
+Disallow: /static/
+Disallow: /temp_docx/
+Disallow: /temp_guide/
+Disallow: /extracted_text.txt
+Disallow: /extracted_guide.txt
+Disallow: /extract.js
+Disallow: /extract_guide.js
+
+Sitemap: https://udaipurescortsservice.com/sitemap.xml

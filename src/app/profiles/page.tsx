@@ -30,11 +30,29 @@ export default function ProfilesPage() {
     ]
   };
 
+  const profileItemListJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    "name": "Verified Companion Profiles - Udaipur Escort Service Previews",
+    "itemListElement": profileImages.map((image, index) => ({
+      "@type": "ListItem",
+      "position": index + 1,
+      "name": `Verified Udaipur escort companion profile preview ${index + 1}`,
+      "url": `${siteConfig.url}/profiles`,
+      "image": `${siteConfig.url}${image}`,
+      "description": `Browse our verified portfolio of VIP companion profiles, independent call girls, and model-style escorts.`
+    }))
+  };
+
   return (
     <main className="section legal-page-wrap">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(profileItemListJsonLd) }}
       />
       <div className="shell">
         <div className="eyebrow">Reviewed Profile Previews</div>
