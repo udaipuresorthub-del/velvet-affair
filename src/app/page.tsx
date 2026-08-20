@@ -33,8 +33,8 @@ function getIndianDateString() {
 }
 
 export const metadata = {
-  title: "Udaipur Escort Service - Premium Escort Services in Udaipur starting ₹3999",
-  description: "Looking for the best escort services in Udaipur? Udaipur Escort Service offers verified call girls in Udaipur, Russian escorts, and VIP companions from ₹3999. Enjoy 100% discretion and Cash on Delivery booking 24/7.",
+  title: "Udaipur Escort Service #1 Top Call Girls in Udaipur @ ₹3999 (24x7 COD)",
+  description: "#1 Verified Udaipur Escort Service & Call Girls in Udaipur starting at ₹3999. VIP models, Russian call girls & independent escorts available 24/7. Cash on Delivery (COD), 100% private. Call/WhatsApp now!",
   alternates: {
     canonical: siteConfig.url
   }
@@ -323,7 +323,7 @@ export default function Home() {
             <Heart size={14} className="icon-pulse" />
             <span className="eyebrow">Udaipur Escort Service</span>
           </div>
-          <h1>Udaipur Escort Service: Premium Escort Services & Call Girls in Udaipur</h1>
+          <h1>#1 Premium Udaipur Escort Service & Top Call Girls in Udaipur</h1>
           <p className="hero-description">
             Welcome to <strong>Udaipur Escort Service</strong>, your premier agency for high-class <strong>escort services in Udaipur</strong> starting at just <strong>₹3999</strong>. If you are looking for elite <strong>call girls in Udaipur</strong>, our platform offers an exclusive directory of verified <strong>Udaipur escorts</strong>, including stunning <strong>VIP escorts</strong>, gorgeous <strong>Russian call girls</strong>, independent models, and local college girls. Enjoy <strong>24/7 service</strong>, quick <strong>WhatsApp booking</strong>, and <strong>Cash on Delivery (COD)</strong> payment for 100% security and discretion. Experience premium companion services at top heritage hotels and luxury lakeside resorts in Udaipur.
           </p>
