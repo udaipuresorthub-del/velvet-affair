@@ -10,4 +10,4 @@ Disallow: /extracted_guide.txt
 Disallow: /extract.js
 Disallow: /extract_guide.js
 
-Sitemap: https://udaipurcallgirlsservices.com/sitemap.xml
+Sitemap: https://velvet-affair.com/sitemap.xml

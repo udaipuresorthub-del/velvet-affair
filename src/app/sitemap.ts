@@ -2,7 +2,7 @@ import { MetadataRoute } from "next";
 import { siteConfig } from "@/lib/site";
 import { blogPosts } from "@/lib/blogs";
 
-export const dynamic = "force-dynamic";
+export const revalidate = 3600;
 
 function getIndianDateString() {
   const utcDate = new Date();
