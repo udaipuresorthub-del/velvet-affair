@@ -35,6 +35,7 @@ function getIndianDateString() {
 }
 
 export const metadata = {
+  metadataBase: new URL(siteConfig.url),
   title: "#1 Udaipur Escort Service | Top Call Girls in Udaipur @ ₹3999 (24/7 COD)",
   description:
     "Book top-rated Udaipur Escort Service & verified call girls in Udaipur from ₹3999. Elite Russian escorts, VIP models & independent call girls with 24x7 Cash on Delivery. 100% private.",
@@ -47,7 +48,16 @@ export const metadata = {
       "Book top-rated Udaipur Escort Service & verified call girls in Udaipur from ₹3999. Elite Russian escorts, VIP models & independent call girls with 24x7 Cash on Delivery.",
     url: siteConfig.url,
     siteName: siteConfig.name,
-    images: ["/images/udaipur-escort-service.jpg"],
+    images: [
+      {
+        url: `${siteConfig.url}/images/udaipur-escort-service.jpg`,
+        secureUrl: `${siteConfig.url}/images/udaipur-escort-service.jpg`,
+        width: 1200,
+        height: 630,
+        type: "image/jpeg",
+        alt: "Velvet Affair - Udaipur Escort Service"
+      }
+    ],
     locale: "en_IN",
     type: "website"
   },
@@ -56,7 +66,7 @@ export const metadata = {
     title: "#1 Udaipur Escort Service | Top Call Girls in Udaipur @ ₹3999 (24/7 COD)",
     description:
       "Book top-rated Udaipur Escort Service & verified call girls in Udaipur from ₹3999. Elite Russian escorts, VIP models & independent call girls with 24x7 Cash on Delivery.",
-    images: ["/images/udaipur-escort-service.jpg"]
+    images: [`${siteConfig.url}/images/udaipur-escort-service.jpg`]
   }
 };
 

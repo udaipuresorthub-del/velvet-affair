@@ -1,6 +1,7 @@
 import { siteConfig } from "@/lib/site";
 
 export const metadata = {
+  metadataBase: new URL(siteConfig.url),
   title: "Terms of Service & 18+ Adult Guidelines | Udaipur Escort Service",
   description:
     "Official terms of service, age criteria (18+), and respectful conduct policies for booking adult companions with Udaipur Escort Service.",
@@ -13,7 +14,16 @@ export const metadata = {
       "Official terms of service, age criteria (18+), and respectful conduct policies for booking adult companions with Udaipur Escort Service.",
     url: `${siteConfig.url}/terms`,
     siteName: siteConfig.name,
-    images: ["/images/udaipur-escort-service.jpg"],
+    images: [
+      {
+        url: `${siteConfig.url}/images/udaipur-escort-service.jpg`,
+        secureUrl: `${siteConfig.url}/images/udaipur-escort-service.jpg`,
+        width: 1200,
+        height: 630,
+        type: "image/jpeg",
+        alt: "Terms of Service - Udaipur Escort Service"
+      }
+    ],
     locale: "en_IN",
     type: "website"
   },
@@ -22,11 +32,25 @@ export const metadata = {
     title: "Terms of Service & 18+ Adult Guidelines | Udaipur Escort Service",
     description:
       "Official terms of service, age criteria (18+), and respectful conduct policies for booking adult companions with Udaipur Escort Service.",
-    images: ["/images/udaipur-escort-service.jpg"]
+    images: [`${siteConfig.url}/images/udaipur-escort-service.jpg`]
   }
 };
 
 export default function TermsPage() {
+  const webPageJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "@id": `${siteConfig.url}/terms#webpage`,
+    "url": `${siteConfig.url}/terms`,
+    "name": "Terms of Service & 18+ Adult Guidelines",
+    "description": "Official terms of service, age criteria (18+), and respectful conduct policies for booking adult companions with Udaipur Escort Service.",
+    "isPartOf": {
+      "@type": "WebSite",
+      "name": siteConfig.name,
+      "url": siteConfig.url
+    }
+  };
+
   const breadcrumbJsonLd = {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
@@ -48,6 +72,10 @@ export default function TermsPage() {
 
   return (
     <main className="section legal-page-wrap">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(webPageJsonLd) }}
+      />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}

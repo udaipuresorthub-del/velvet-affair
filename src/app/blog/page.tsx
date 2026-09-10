@@ -7,6 +7,7 @@ import { Calendar, ChevronRight } from "lucide-react";
 export const dynamic = "force-dynamic";
 
 export const metadata = {
+  metadataBase: new URL(siteConfig.url),
   title: "Udaipur Companion Guides & Escort Service Insights | Velvet Affair",
   description:
     "Read expert companion guides on booking call girls in Udaipur, luxury hotel etiquette, lakeside date ideas, and discreet companionship tips.",
@@ -19,7 +20,16 @@ export const metadata = {
       "Read expert companion guides on booking call girls in Udaipur, luxury hotel etiquette, lakeside date ideas, and discreet companionship tips.",
     url: `${siteConfig.url}/blog`,
     siteName: siteConfig.name,
-    images: ["/images/udaipur-escort-service.jpg"],
+    images: [
+      {
+        url: `${siteConfig.url}/images/udaipur-escort-service.jpg`,
+        secureUrl: `${siteConfig.url}/images/udaipur-escort-service.jpg`,
+        width: 1200,
+        height: 630,
+        type: "image/jpeg",
+        alt: "Udaipur Companion Guides & Escort Service Insights - Velvet Affair"
+      }
+    ],
     locale: "en_IN",
     type: "website"
   },
@@ -28,7 +38,7 @@ export const metadata = {
     title: "Udaipur Companion Guides & Escort Service Insights | Velvet Affair",
     description:
       "Read expert companion guides on booking call girls in Udaipur, luxury hotel etiquette, lakeside date ideas, and discreet companionship tips.",
-    images: ["/images/udaipur-escort-service.jpg"]
+    images: [`${siteConfig.url}/images/udaipur-escort-service.jpg`]
   }
 };
 
@@ -47,6 +57,24 @@ export default function BlogListingPage() {
   const publishedPosts = blogPosts
     .filter((post) => post.publishDate <= today)
     .sort((a, b) => b.publishDate.localeCompare(a.publishDate));
+
+  const blogJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Blog",
+    "@id": `${siteConfig.url}/blog#blog`,
+    "name": "Companionship Insights & Udaipur Escort Guides",
+    "description": "Read expert companion guides on booking call girls in Udaipur, luxury hotel etiquette, lakeside date ideas, and discreet companionship tips.",
+    "url": `${siteConfig.url}/blog`,
+    "publisher": {
+      "@type": "Organization",
+      "name": siteConfig.name,
+      "url": siteConfig.url,
+      "logo": {
+        "@type": "ImageObject",
+        "url": `${siteConfig.url}/logo.png`
+      }
+    }
+  };
 
   const breadcrumbJsonLd = {
     "@context": "https://schema.org",
@@ -69,6 +97,10 @@ export default function BlogListingPage() {
 
   return (
     <main className="section legal-page-wrap">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(blogJsonLd) }}
+      />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}

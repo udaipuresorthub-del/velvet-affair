@@ -30,7 +30,10 @@ export async function generateMetadata({ params }: Props) {
   const today = getIndianDateString();
   if (post.publishDate > today) return {};
 
+  const imageUrl = `${siteConfig.url}${post.image || "/images/udaipur-escort-service.jpg"}`;
+
   return {
+    metadataBase: new URL(siteConfig.url),
     title: `${post.title} | Udaipur Escort Service`,
     description: post.description,
     keywords: post.keywords,
@@ -42,7 +45,16 @@ export async function generateMetadata({ params }: Props) {
       description: post.description,
       url: `${siteConfig.url}/blog/${slug}`,
       siteName: siteConfig.name,
-      images: [post.image || "/images/udaipur-escort-service.jpg"],
+      images: [
+        {
+          url: imageUrl,
+          secureUrl: imageUrl,
+          width: 1200,
+          height: 630,
+          type: "image/jpeg",
+          alt: post.title
+        }
+      ],
       locale: "en_IN",
       type: "article"
     },
@@ -50,7 +62,7 @@ export async function generateMetadata({ params }: Props) {
       card: "summary_large_image",
       title: `${post.title} | Udaipur Escort Service`,
       description: post.description,
-      images: [post.image || "/images/udaipur-escort-service.jpg"]
+      images: [imageUrl]
     }
   };
 }
@@ -71,10 +83,19 @@ export default async function BlogPostPage({ params }: Props) {
   const articleJsonLd = {
     "@context": "https://schema.org",
     "@type": "BlogPosting",
+    "@id": `${siteConfig.url}/blog/${slug}#article`,
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": `${siteConfig.url}/blog/${slug}`
+    },
     "headline": post.title,
     "description": post.description,
-    "image": `${siteConfig.url}${post.image}`,
+    "image": [
+      `${siteConfig.url}${post.image || "/images/udaipur-escort-service.jpg"}`
+    ],
     "datePublished": post.publishDate,
+    "dateModified": post.publishDate,
+    "inLanguage": "en-IN",
     "author": {
       "@type": "Organization",
       "name": siteConfig.name,
@@ -83,6 +104,7 @@ export default async function BlogPostPage({ params }: Props) {
     "publisher": {
       "@type": "Organization",
       "name": siteConfig.name,
+      "url": siteConfig.url,
       "logo": {
         "@type": "ImageObject",
         "url": `${siteConfig.url}/logo.png`

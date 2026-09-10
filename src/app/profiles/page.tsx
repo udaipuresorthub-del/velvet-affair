@@ -4,6 +4,7 @@ import { profileImages, siteConfig } from "@/lib/site";
 import { MessageCircle, Phone, Sparkles } from "lucide-react";
 
 export const metadata = {
+  metadataBase: new URL(siteConfig.url),
   title: "Verified Companion Profiles | Udaipur Escort Service & VIP Models",
   description:
     "Explore verified Udaipur escort profiles & call girls in Udaipur. VIP models, Russian companions & independent escorts available 24/7 with Cash on Delivery from ₹3999.",
@@ -16,7 +17,16 @@ export const metadata = {
       "Explore verified Udaipur escort profiles & call girls in Udaipur. VIP models, Russian companions & independent escorts available 24/7 with Cash on Delivery from ₹3999.",
     url: `${siteConfig.url}/profiles`,
     siteName: siteConfig.name,
-    images: ["/images/udaipur-escort-service.jpg"],
+    images: [
+      {
+        url: `${siteConfig.url}/images/udaipur-escort-service.jpg`,
+        secureUrl: `${siteConfig.url}/images/udaipur-escort-service.jpg`,
+        width: 1200,
+        height: 630,
+        type: "image/jpeg",
+        alt: "Verified Companion Profiles - Udaipur Escort Service"
+      }
+    ],
     locale: "en_IN",
     type: "website"
   },
@@ -25,7 +35,7 @@ export const metadata = {
     title: "Verified Companion Profiles | Udaipur Escort Service & VIP Models",
     description:
       "Explore verified Udaipur escort profiles & call girls in Udaipur. VIP models, Russian companions & independent escorts available 24/7 with Cash on Delivery from ₹3999.",
-    images: ["/images/udaipur-escort-service.jpg"]
+    images: [`${siteConfig.url}/images/udaipur-escort-service.jpg`]
   }
 };
 
@@ -63,8 +73,26 @@ export default function ProfilesPage() {
     }))
   };
 
+  const collectionPageJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    "name": "Verified Companion Profiles | Udaipur Escort Service",
+    "description": "Exclusive verified directory of VIP models, Russian call girls, and independent companions in Udaipur.",
+    "url": `${siteConfig.url}/profiles`,
+    "publisher": {
+      "@type": "Organization",
+      "name": siteConfig.name,
+      "url": siteConfig.url,
+      "logo": `${siteConfig.url}/logo.png`
+    }
+  };
+
   return (
     <main className="section legal-page-wrap">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(collectionPageJsonLd) }}
+      />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}

@@ -1,6 +1,7 @@
 import { siteConfig } from "@/lib/site";
 
 export const metadata = {
+  metadataBase: new URL(siteConfig.url),
   title: "Privacy Policy & Discretion Standards | Udaipur Escort Service",
   description:
     "Discreet and private data practices. Learn how Udaipur Escort Service protects user confidentiality, inquiry details, and respects client preferences.",
@@ -13,7 +14,16 @@ export const metadata = {
       "Discreet and private data practices. Learn how Udaipur Escort Service protects user confidentiality, inquiry details, and respects client preferences.",
     url: `${siteConfig.url}/privacy`,
     siteName: siteConfig.name,
-    images: ["/images/udaipur-escort-service.jpg"],
+    images: [
+      {
+        url: `${siteConfig.url}/images/udaipur-escort-service.jpg`,
+        secureUrl: `${siteConfig.url}/images/udaipur-escort-service.jpg`,
+        width: 1200,
+        height: 630,
+        type: "image/jpeg",
+        alt: "Privacy Policy - Udaipur Escort Service"
+      }
+    ],
     locale: "en_IN",
     type: "website"
   },
@@ -22,11 +32,25 @@ export const metadata = {
     title: "Privacy Policy & Discretion Standards | Udaipur Escort Service",
     description:
       "Discreet and private data practices. Learn how Udaipur Escort Service protects user confidentiality, inquiry details, and respects client preferences.",
-    images: ["/images/udaipur-escort-service.jpg"]
+    images: [`${siteConfig.url}/images/udaipur-escort-service.jpg`]
   }
 };
 
 export default function PrivacyPage() {
+  const webPageJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "@id": `${siteConfig.url}/privacy#webpage`,
+    "url": `${siteConfig.url}/privacy`,
+    "name": "Privacy Policy & Discretion Standards",
+    "description": "Discreet and private data practices. Learn how Udaipur Escort Service protects user confidentiality, inquiry details, and respects client preferences.",
+    "isPartOf": {
+      "@type": "WebSite",
+      "name": siteConfig.name,
+      "url": siteConfig.url
+    }
+  };
+
   const breadcrumbJsonLd = {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
@@ -48,6 +72,10 @@ export default function PrivacyPage() {
 
   return (
     <main className="section legal-page-wrap">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(webPageJsonLd) }}
+      />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
