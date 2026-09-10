@@ -21,3 +21,6 @@ extract_guide.js
 
 .vercel
 .env*
+*.tsbuildinfo
+*.docx
+photos/

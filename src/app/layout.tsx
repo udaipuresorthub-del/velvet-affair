@@ -2,15 +2,16 @@ import type { Metadata } from "next";
 import type { Viewport } from "next";
 import Image from "next/image";
 import Link from "next/link";
-import { DM_Sans } from "next/font/google";
+import { Poppins } from "next/font/google";
 import { MessageCircle, Phone, Mail, Clock, MapPin } from "lucide-react";
 import "./globals.css";
 import { serviceAreas, siteConfig } from "@/lib/site";
 
-const dmSans = DM_Sans({
+const poppins = Poppins({
   subsets: ["latin"],
-  weight: ["300", "400", "500", "600", "700", "800", "900", "1000"],
-  display: "swap"
+  weight: ["300", "400", "500", "600", "700", "800", "900"],
+  display: "swap",
+  variable: "--font-poppins"
 });
 
 export const metadata: Metadata = {
@@ -73,7 +74,7 @@ export const viewport: Viewport = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en-IN" className={dmSans.className}>
+    <html lang="en-IN" className={`${poppins.className} ${poppins.variable}`}>
       <head>
         <meta name="google-site-verification" content={siteConfig.googleVerification} />
         <meta name="apple-mobile-web-app-capable" content="yes" />
