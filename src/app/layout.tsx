@@ -88,7 +88,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en-IN" className={`${poppins.className} ${poppins.variable}`}>
       <head>
-        <meta name="google-site-verification" content={siteConfig.googleVerification} />
+        <meta name="google-site-verification" content="KUbuR1PaMd5j4C6cw4TRpJlUo2YojJo-0SbHgctkrtQ" />
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-title" content={siteConfig.name} />
         <meta name="apple-mobile-web-app-status-bar-style" content="default" />
