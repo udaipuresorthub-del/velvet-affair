@@ -122,19 +122,19 @@ export default function BlogListingPage() {
                     alignItems: "center",
                     gap: 6,
                     fontSize: 12,
-                    fontWeight: 700,
+                    fontWeight: 400,
                     color: "var(--gold-dark)",
                     marginBottom: 10
                   }}>
                     <Calendar size={13} />
                     <span>{post.publishDate}</span>
                   </div>
-                  <h3 style={{ fontSize: 18, color: "var(--ink)", marginBottom: 12, lineHeight: 1.35 }}>
+                  <h3 style={{ fontSize: 18, color: "var(--ink)", marginBottom: 12, lineHeight: 1.35, fontWeight: 400 }}>
                     <Link href={`/blog/${post.slug}`} style={{ color: "var(--ink)" }} className="hover-gold">
                       {post.title}
                     </Link>
                   </h3>
-                  <p style={{ fontSize: 13.5, color: "var(--muted)", marginBottom: 20, flexGrow: 1, lineHeight: 1.65 }}>
+                  <p style={{ fontSize: 13.5, color: "var(--muted)", marginBottom: 20, flexGrow: 1, lineHeight: 1.65, fontWeight: 400 }}>
                     {post.description}
                   </p>
                   <Link href={`/blog/${post.slug}`} style={{
@@ -142,7 +142,7 @@ export default function BlogListingPage() {
                     alignItems: "center",
                     gap: 4,
                     fontSize: 13,
-                    fontWeight: 800,
+                    fontWeight: 400,
                     color: "var(--gold-dark)"
                   }} className="hover-underline">
                     Read Article <ChevronRight size={14} />

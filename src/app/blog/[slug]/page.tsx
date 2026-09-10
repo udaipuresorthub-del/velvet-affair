@@ -133,8 +133,8 @@ export default async function BlogPostPage({ params }: Props) {
             alignItems: "center",
             gap: 8,
             fontSize: 14,
-            fontWeight: 700,
-            color: "var(--gold)"
+            fontWeight: 400,
+            color: "var(--gold-dark)"
           }}>
             <ArrowLeft size={16} /> Back to Blog list
           </Link>
@@ -147,7 +147,7 @@ export default async function BlogPostPage({ params }: Props) {
               flexWrap: "wrap",
               gap: 20,
               fontSize: 13,
-              fontWeight: 700,
+              fontWeight: 400,
               color: "var(--muted)",
               marginBottom: 16
             }}>
@@ -158,11 +158,10 @@ export default async function BlogPostPage({ params }: Props) {
               fontSize: "clamp(26px, 4vw, 42px)",
               lineHeight: 1.2,
               marginBottom: 20,
-              background: "linear-gradient(135deg, #ffffff 20%, #ff8fa3 60%, #ff3366 100%)",
-              WebkitBackgroundClip: "text",
-              WebkitTextFillColor: "transparent"
+              color: "var(--ink)",
+              fontWeight: 400
             }}>{post.title}</h1>
-            <p className="lead" style={{ fontSize: 16, lineHeight: 1.6, color: "var(--ink)", opacity: 0.9 }}>
+            <p className="lead" style={{ fontSize: 16, lineHeight: 1.6, color: "var(--ink)", opacity: 0.9, fontWeight: 400 }}>
               {post.description}
             </p>
           </div>
@@ -196,9 +195,10 @@ export default async function BlogPostPage({ params }: Props) {
                   color: "var(--ink)",
                   marginBottom: 14,
                   borderLeft: "3px solid var(--gold)",
-                  paddingLeft: 12
+                  paddingLeft: 12,
+                  fontWeight: 400
                 }}>{section.heading}</h2>
-                <p style={{ marginBottom: 16 }}>{section.body}</p>
+                <p style={{ marginBottom: 16, fontWeight: 400 }}>{section.body}</p>
               </section>
             ))}
           </div>
@@ -213,7 +213,7 @@ export default async function BlogPostPage({ params }: Props) {
             boxShadow: "var(--card-shadow)"
           }}>
             <Heart size={30} className="icon-pulse gold-text" style={{ margin: "0 auto 16px" }} />
-            <h3 style={{ color: "var(--ink)", fontSize: 20, marginBottom: 10 }}>Looking for Premium Companionship in Udaipur?</h3>
+            <h3 style={{ color: "var(--ink)", fontSize: 20, marginBottom: 10, fontWeight: 400 }}>Looking for Premium Companionship in Udaipur?</h3>
             <p style={{ fontSize: 14, color: "var(--muted)", marginBottom: 24, maxWidth: 500, marginInline: "auto" }}>
               Book high class call girls and premium VIP escorts in Udaipur starting from ₹3999. Enjoy complete privacy and cash on delivery.
             </p>

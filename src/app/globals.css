@@ -24,10 +24,57 @@
   --card-shadow-hover: 0 18px 42px -4px rgba(212, 175, 55, 0.16), 0 4px 14px rgba(0, 0, 0, 0.05);
 }
 
-* {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-weight: 400;
+}
+
+body,
+p,
+span,
+div,
+li,
+a,
+label,
+input,
+button,
+select,
+textarea,
+strong,
+b,
+em,
+i,
+th,
+td,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.eyebrow,
+.badge-item,
+.button,
+.navlinks,
+.topbar,
+.overview-row-v2,
+.overview-row-v2.header-row,
+.overview-row-v2 .label,
+.overview-row-v2 .value,
+.card-title,
+.seo-body,
+.seo-body * {
+  font-weight: 400 !important;
+}
+
+strong,
+b {
+  font-weight: 400 !important;
+  color: var(--ink);
 }
 
 html {
@@ -40,6 +87,7 @@ body {
   background: var(--bg-dark);
   color: var(--ink);
   font-family: var(--font-poppins);
+  font-weight: 400 !important;
   line-height: 1.65;
   overflow-x: hidden;
   width: 100%;
@@ -89,7 +137,7 @@ img {
   background: var(--gold-gradient);
   color: #ffffff;
   font-size: 11px;
-  font-weight: 700;
+  font-weight: 400;
   letter-spacing: 0.08em;
   text-transform: uppercase;
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
@@ -139,7 +187,7 @@ img {
   align-items: center;
   gap: 26px;
   font-size: 14px;
-  font-weight: 600;
+  font-weight: 400;
   letter-spacing: 0.01em;
 }
 
@@ -147,14 +195,14 @@ img {
   position: relative;
   padding: 10px 0;
   color: var(--ink-soft);
-  font-weight: 600;
+  font-weight: 400;
 }
 
 .navlinks > a:not(.button):not(.nav-call):hover {
   color: var(--gold-dark);
 }
 
-.navlinks > a:not(.button):not(.nav-call)::after {
+.navlinks > a:not(.button):not(.nav-call):after {
   content: "";
   position: absolute;
   left: 0;
@@ -168,7 +216,7 @@ img {
   border-radius: 2px;
 }
 
-.navlinks > a:not(.button):not(.nav-call):hover::after {
+.navlinks > a:not(.button):not(.nav-call):hover:after {
   transform: scaleX(1);
 }
 
@@ -180,7 +228,7 @@ img {
   border-radius: 999px;
   background: rgba(212, 175, 55, 0.08);
   padding: 10px 18px;
-  font-weight: 700;
+  font-weight: 400;
   color: var(--gold-dark) !important;
   transition: var(--transition-smooth);
 }
@@ -271,7 +319,7 @@ img {
 .eyebrow {
   color: var(--gold-dark);
   font-size: 11px;
-  font-weight: 800;
+  font-weight: 400;
   letter-spacing: 0.1em;
   text-transform: uppercase;
 }
@@ -326,6 +374,7 @@ p {
   color: var(--muted);
   font-size: 15px;
   line-height: 1.75;
+  font-weight: 400 !important;
 }
 
 .hero-description {
@@ -338,7 +387,7 @@ p {
 
 .hero-description strong {
   color: var(--ink);
-  font-weight: 700;
+  font-weight: 400;
 }
 
 /* ==========================================================================
@@ -357,7 +406,7 @@ button {
   color: var(--ink);
   padding: 12px 26px;
   font-size: 14px;
-  font-weight: 700;
+  font-weight: 400;
   cursor: pointer;
   transition: var(--transition-smooth);
   box-shadow: var(--card-shadow);
@@ -376,7 +425,7 @@ button.gold {
   background: var(--gold-gradient);
   color: #ffffff;
   border: none;
-  font-weight: 800;
+  font-weight: 400;
   box-shadow: 0 6px 20px var(--gold-glow);
 }
 
@@ -427,7 +476,7 @@ button.gold:hover {
   justify-content: center;
   gap: 10px;
   font-size: 14px;
-  font-weight: 700;
+  font-weight: 400;
   color: var(--ink);
   background: #ffffff;
   padding: 12px 18px;
@@ -541,7 +590,7 @@ button.gold:hover {
   align-items: flex-start;
   gap: 10px;
   font-size: 14px;
-  font-weight: 500;
+  font-weight: 400;
   color: var(--ink);
 }
 
@@ -571,7 +620,7 @@ button.gold:hover {
   align-items: center;
   gap: 8px;
   font-size: 14px;
-  font-weight: 600;
+  font-weight: 400;
   color: var(--ink);
 }
 
@@ -599,7 +648,7 @@ button.gold:hover {
   padding: 8px 16px;
   border-radius: 999px;
   font-size: 13px;
-  font-weight: 600;
+  font-weight: 400;
   color: var(--gold-dark);
   box-shadow: 0 2px 8px rgba(212, 175, 55, 0.08);
 }
@@ -660,7 +709,7 @@ button.gold:hover {
   padding: 8px 14px;
   border-radius: 999px;
   font-size: 12.5px;
-  font-weight: 600;
+  font-weight: 400;
   color: var(--ink);
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.02);
   transition: var(--transition-smooth);
@@ -714,7 +763,7 @@ button.gold:hover {
   background: var(--gold-gradient);
   color: #ffffff;
   font-size: 16px;
-  font-weight: 800;
+  font-weight: 400;
   margin-bottom: 16px;
   box-shadow: 0 4px 14px var(--gold-glow);
 }
@@ -792,7 +841,7 @@ button.gold:hover {
   align-items: center;
   gap: 7px;
   font-size: 13px;
-  font-weight: 600;
+  font-weight: 400;
   color: var(--ink);
 }
 
@@ -836,7 +885,7 @@ button.gold:hover {
   align-items: center;
   gap: 8px;
   font-size: 13px;
-  font-weight: 600;
+  font-weight: 400;
   color: var(--ink);
 }
 
@@ -870,7 +919,7 @@ button.gold:hover {
 .phone-link,
 .wa-link {
   font-size: 18px;
-  font-weight: 800;
+  font-weight: 400;
   color: var(--ink);
 }
 
@@ -880,10 +929,33 @@ button.gold:hover {
 }
 
 /* ==========================================================================
-   Overview Table
+   Overview Table (Mobile Horizontal Scrollable)
    ========================================================================== */
 .overview-wrap-v2 {
   max-width: 1000px;
+}
+
+.overview-table-container {
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  padding-bottom: 10px;
+  margin-top: 16px;
+  border-radius: 16px;
+}
+
+.overview-table-container::-webkit-scrollbar {
+  height: 6px;
+}
+
+.overview-table-container::-webkit-scrollbar-thumb {
+  background: var(--gold);
+  border-radius: 999px;
+}
+
+.overview-table-container::-webkit-scrollbar-track {
+  background: rgba(212, 175, 55, 0.1);
+  border-radius: 999px;
 }
 
 .overview-table-v2 {
@@ -892,6 +964,7 @@ button.gold:hover {
   border-radius: 16px;
   overflow: hidden;
   box-shadow: var(--card-shadow);
+  min-width: 580px;
 }
 
 .overview-row-v2 {
@@ -900,6 +973,7 @@ button.gold:hover {
   padding: 16px 24px;
   border-bottom: 1px solid var(--line);
   font-size: 14px;
+  min-width: 580px;
 }
 
 .overview-row-v2:last-child {
@@ -908,18 +982,19 @@ button.gold:hover {
 
 .overview-row-v2.header-row {
   background: var(--gold-gradient-soft);
-  font-weight: 800;
+  font-weight: 400 !important;
   color: var(--ink);
   border-bottom: 1.5px solid var(--line-strong);
 }
 
 .overview-row-v2 .label {
-  font-weight: 700;
+  font-weight: 400 !important;
   color: var(--ink);
 }
 
 .overview-row-v2 .value {
   color: var(--muted);
+  font-weight: 400 !important;
 }
 
 /* ==========================================================================
@@ -976,7 +1051,7 @@ button.gold:hover {
   flex-direction: column;
   gap: 6px;
   font-size: 13px;
-  font-weight: 700;
+  font-weight: 400;
   color: var(--ink-soft);
 }
 
@@ -1023,7 +1098,7 @@ button.gold:hover {
 
 .checkbox-text {
   font-size: 13px;
-  font-weight: 500;
+  font-weight: 400;
   color: var(--muted);
 }
 
@@ -1031,7 +1106,7 @@ button.gold:hover {
   padding: 14px 18px;
   border-radius: 10px;
   font-size: 13px;
-  font-weight: 600;
+  font-weight: 400;
 }
 
 .status-notice-v2.success {
@@ -1095,7 +1170,7 @@ button.gold:hover {
 .faq-summary-v2 {
   padding: 20px 24px;
   font-size: 16px;
-  font-weight: 700;
+  font-weight: 400;
   color: var(--ink);
   cursor: pointer;
   list-style: none;
@@ -1112,7 +1187,7 @@ button.gold:hover {
 .faq-summary-v2::after {
   content: "+";
   font-size: 20px;
-  font-weight: 800;
+  font-weight: 400;
   color: var(--gold);
   transition: var(--transition-smooth);
 }
@@ -1176,7 +1251,7 @@ button.gold:hover {
   gap: 5px;
   border-radius: 999px;
   font-size: 12px;
-  font-weight: 800;
+  font-weight: 400;
   line-height: 1;
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
@@ -1228,7 +1303,7 @@ button.gold:hover {
   border: 1px solid var(--line);
   color: var(--gold-dark);
   font-size: 11px;
-  font-weight: 700;
+  font-weight: 400;
   text-transform: uppercase;
   letter-spacing: 0.05em;
   padding: 4px 10px;
@@ -1257,12 +1332,12 @@ button.gold:hover {
   align-items: center;
   gap: 5px;
   color: var(--gold-dark);
-  font-weight: 700;
+  font-weight: 400;
 }
 
 .girl-card-meta a {
   color: var(--gold-dark);
-  font-weight: 700;
+  font-weight: 400;
   text-decoration: underline;
 }
 
@@ -1332,7 +1407,7 @@ button.gold:hover {
   border: 1px solid var(--line-strong);
   box-shadow: 0 2px 10px rgba(212, 175, 55, 0.2);
   font-size: 11px;
-  font-weight: 800;
+  font-weight: 400;
   padding: 5px 12px;
   border-radius: 999px;
   backdrop-filter: blur(8px);
@@ -1503,7 +1578,7 @@ button.gold:hover {
   border: 1.5px solid var(--gold);
   color: var(--gold-dark);
   font-size: 11px;
-  font-weight: 800;
+  font-weight: 400;
   text-transform: uppercase;
   letter-spacing: 0.05em;
   padding: 5px 12px;
@@ -1730,7 +1805,7 @@ button.gold:hover {
 
 .seo-toc li a {
   color: var(--gold-dark);
-  font-weight: 600;
+  font-weight: 400;
   font-size: 14px;
 }
 
@@ -1759,11 +1834,19 @@ button.gold:hover {
 .seo-table th {
   background: var(--gold-gradient-soft);
   color: var(--ink);
-  font-weight: 800;
+  font-weight: 400 !important;
 }
 
 .seo-table tr:last-child td {
   border-bottom: none;
+}
+
+.seo-body table,
+.article-body table {
+  display: block;
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
 }
 
 /* ==========================================================================
@@ -2017,7 +2100,7 @@ button.gold:hover {
     justify-content: center;
     gap: 8px;
     border-radius: 999px;
-    font-weight: 800;
+    font-weight: 400;
     font-size: 13px;
     color: #fff;
     transition: var(--transition-smooth);

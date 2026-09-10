@@ -164,7 +164,7 @@ export default function Home() {
   const publishedBlogs = blogPosts
     .filter((post) => post.publishDate <= today)
     .sort((a, b) => b.publishDate.localeCompare(a.publishDate))
-    .slice(0, 3);
+    .slice(0, 6);
 
   const organizationJsonLd = {
     "@context": "https://schema.org",
@@ -430,19 +430,19 @@ export default function Home() {
                       alignItems: "center",
                       gap: 6,
                       fontSize: 12,
-                      fontWeight: 700,
+                      fontWeight: 400,
                       color: "var(--gold-dark)",
                       marginBottom: 10
                     }}>
                       <CalendarCheck size={13} />
                       <span>{post.publishDate}</span>
                     </div>
-                    <h3 style={{ fontSize: 18, color: "var(--ink)", marginBottom: 12, lineHeight: 1.35 }}>
+                    <h3 style={{ fontSize: 18, color: "var(--ink)", marginBottom: 12, lineHeight: 1.35, fontWeight: 400 }}>
                       <Link href={`/blog/${post.slug}`} style={{ color: "var(--ink)" }} className="hover-gold">
                         {post.title}
                       </Link>
                     </h3>
-                    <p style={{ fontSize: 13.5, color: "var(--muted)", marginBottom: 20, flexGrow: 1, lineHeight: 1.65 }}>
+                    <p style={{ fontSize: 13.5, color: "var(--muted)", marginBottom: 20, flexGrow: 1, lineHeight: 1.65, fontWeight: 400 }}>
                       {post.description}
                     </p>
                     <Link href={`/blog/${post.slug}`} style={{
@@ -450,7 +450,7 @@ export default function Home() {
                       alignItems: "center",
                       gap: 4,
                       fontSize: 13,
-                      fontWeight: 800,
+                      fontWeight: 400,
                       color: "var(--gold-dark)"
                     }} className="hover-underline">
                       Read Full Article <ChevronRight size={14} />
@@ -479,17 +479,19 @@ export default function Home() {
               A comprehensive overview of service options, destination reach, tariff transparency, and privacy protocols.
             </p>
           </div>
-          <div className="overview-table-v2">
-            <div className="overview-row-v2 header-row">
-              <span className="label">Parameter</span>
-              <span className="value">Standard Policy</span>
-            </div>
-            {overviewRows.map(([key, val]) => (
-              <div className="overview-row-v2" key={key}>
-                <span className="label">{key}</span>
-                <span className="value">{val}</span>
+          <div className="overview-table-container">
+            <div className="overview-table-v2">
+              <div className="overview-row-v2 header-row">
+                <span className="label">Parameter</span>
+                <span className="value">Standard Policy</span>
               </div>
-            ))}
+              {overviewRows.map(([key, val]) => (
+                <div className="overview-row-v2" key={key}>
+                  <span className="label">{key}</span>
+                  <span className="value">{val}</span>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </section>
@@ -609,7 +611,7 @@ export default function Home() {
       </section>
 
       {/* VIP Category & Destination Coverage */}
-      <section className="section alt">
+      <section className="section alt" id="areas">
         <div className="shell grid-2">
           <div className="premium-box">
             <span className="eyebrow">VIP Prestige</span>
