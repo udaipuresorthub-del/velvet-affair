@@ -1,10 +1,28 @@
 import { siteConfig } from "@/lib/site";
 
 export const metadata = {
-  title: "Privacy Policy - Udaipur Escort Service",
-  description: "Discreet and private data practices. Learn how Udaipur Escort Service protects user confidentiality, inquiry details, and respects client preferences.",
+  title: "Privacy Policy & Discretion Standards | Udaipur Escort Service",
+  description:
+    "Discreet and private data practices. Learn how Udaipur Escort Service protects user confidentiality, inquiry details, and respects client preferences.",
   alternates: {
     canonical: `${siteConfig.url}/privacy`
+  },
+  openGraph: {
+    title: "Privacy Policy & Discretion Standards | Udaipur Escort Service",
+    description:
+      "Discreet and private data practices. Learn how Udaipur Escort Service protects user confidentiality, inquiry details, and respects client preferences.",
+    url: `${siteConfig.url}/privacy`,
+    siteName: siteConfig.name,
+    images: ["/images/udaipur-escort-service.jpg"],
+    locale: "en_IN",
+    type: "website"
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Privacy Policy & Discretion Standards | Udaipur Escort Service",
+    description:
+      "Discreet and private data practices. Learn how Udaipur Escort Service protects user confidentiality, inquiry details, and respects client preferences.",
+    images: ["/images/udaipur-escort-service.jpg"]
   }
 };
 
@@ -36,29 +54,29 @@ export default function PrivacyPage() {
       />
       <div className="shell legal-content-box">
         <div className="eyebrow">Client Privacy Safeguards</div>
-        <h1>Privacy Policy</h1>
+        <h1>Privacy Policy & Confidentiality</h1>
         <p className="lead">
-          We maintain absolute confidentiality for our Udaipur escort service bookings. Learn how your data is managed below.
+          We maintain absolute confidentiality for our Udaipur escort service bookings. Learn how your privacy is protected below.
         </p>
 
         <h2>Information Collection & Scope</h2>
         <p>
-          Udaipur Escort Service operates as an adult-only companionship inquiry system. We collect only the essential parameters required to check companion availability, such as your nickname/name, phone number or WhatsApp contact details, preferred local area, timing window, and escort profile preferences.
+          Udaipur Escort Service operates as an adult-only companionship inquiry desk. We collect only the minimal parameters required to check companion availability, such as your preferred name, phone number or WhatsApp contact details, hotel or area name, timing window, and escort profile preferences.
         </p>
 
-        <h2>How Information Is Used</h2>
+        <h2>How Information Is Handled</h2>
         <p>
-          Your inquiry parameters are strictly utilized to verify available companion profiles, coordinate schedules, and confirm the details of your booking. We never maintain permanent logs or databases of user personal data, nor do we disclose or sell any user information to third-party databases.
+          Your inquiry parameters are strictly utilized to coordinate available companion profiles, verify schedules, and confirm the details of your reservation. We never maintain permanent logs or databases of client personal data, nor do we disclose or sell any client information to third-party marketing networks.
         </p>
 
-        <h2>Confidentiality Practices</h2>
+        <h2>Zero Trace Discretion Practices</h2>
         <p>
-          All direct communications via call, SMS, or WhatsApp are treated with absolute discretion. We regularly purge reservation messages and call histories to safeguard your identity and preference parameters.
+          All direct communications via call, SMS, or WhatsApp are treated with absolute discretion. We regularly purge reservation messages and call histories to safeguard your identity and personal preferences.
         </p>
 
         <h2>Strictly 18+ Access Only</h2>
         <p>
-          Our site and services are restricted to consenting adults aged 18 and older. By submitting an inquiry form, you verify that you meet this requirement and will comply with all local laws and rules during your social companion booking.
+          Our site and companion services are strictly restricted to consenting adults aged 18 and older. By submitting an inquiry, you verify that you meet this legal requirement and agree to communicate politely and respectfully.
         </p>
       </div>
     </main>

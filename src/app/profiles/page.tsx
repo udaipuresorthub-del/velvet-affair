@@ -1,12 +1,31 @@
 import Image from "next/image";
 import Link from "next/link";
 import { profileImages, siteConfig } from "@/lib/site";
+import { MessageCircle, Phone, Sparkles } from "lucide-react";
 
 export const metadata = {
-  title: "Reviewed Companion Profiles - Udaipur Escort Service Previews",
-  description: "Browse our verified portfolio of Udaipur Escort Service profiles. Select VIP, independent, model-style, and Russian escort previews starting from ₹3999.",
+  title: "Verified Companion Profiles | Udaipur Escort Service & VIP Models",
+  description:
+    "Explore verified Udaipur escort profiles & call girls in Udaipur. VIP models, Russian companions & independent escorts available 24/7 with Cash on Delivery from ₹3999.",
   alternates: {
     canonical: `${siteConfig.url}/profiles`
+  },
+  openGraph: {
+    title: "Verified Companion Profiles | Udaipur Escort Service & VIP Models",
+    description:
+      "Explore verified Udaipur escort profiles & call girls in Udaipur. VIP models, Russian companions & independent escorts available 24/7 with Cash on Delivery from ₹3999.",
+    url: `${siteConfig.url}/profiles`,
+    siteName: siteConfig.name,
+    images: ["/images/udaipur-escort-service.jpg"],
+    locale: "en_IN",
+    type: "website"
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Verified Companion Profiles | Udaipur Escort Service & VIP Models",
+    description:
+      "Explore verified Udaipur escort profiles & call girls in Udaipur. VIP models, Russian companions & independent escorts available 24/7 with Cash on Delivery from ₹3999.",
+    images: ["/images/udaipur-escort-service.jpg"]
   }
 };
 
@@ -55,13 +74,13 @@ export default function ProfilesPage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(profileItemListJsonLd) }}
       />
       <div className="shell">
-        <div className="eyebrow">Reviewed Profile Previews</div>
-        <h1>Our Premium Companion Profiles - Udaipur Escort Service</h1>
-        <p className="lead">
-          Browse through our verified portfolio of VIP companion profiles, independent call girls, and model-style escorts. Previews are sorted below for client convenience. Booking packages start at just ₹3999 with cash on delivery.
+        <div className="eyebrow">Verified Gallery Portfolio</div>
+        <h1>Exclusive Companion Profiles – Udaipur Escort Service</h1>
+        <p className="lead" style={{ fontSize: 16, color: "var(--muted)", maxWidth: 840, lineHeight: 1.8, marginBottom: 30 }}>
+          Explore our handpicked selection of VIP models, international Russian escorts, and independent call girls in Udaipur. Each profile is physically verified for authenticity, aesthetic grace, and discreet professionalism. Packages start from just ₹3999 with 100% Cash on Delivery (COD) on physical arrival.
         </p>
 
-        <div className="profile-grid" style={{ marginTop: 40 }}>
+        <div className="profile-grid" style={{ marginTop: 30 }}>
           {profileImages.map((image, index) => (
             <div key={image} className="profile-card-wrap">
               <div className="profile-img-container">
@@ -80,12 +99,15 @@ export default function ProfilesPage() {
           ))}
         </div>
 
-        <div className="actions" style={{ marginTop: 40 }}>
-          <Link href="/#contact" className="button gold">
-            Check Availability
+        <div className="actions" style={{ marginTop: 44, display: "flex", flexWrap: "wrap", gap: 16, justifyContent: "center" }}>
+          <Link href={`https://wa.me/${siteConfig.whatsapp}`} className="button gold">
+            <MessageCircle size={16} /> WhatsApp for Live Photos
           </Link>
-          <Link href="/" className="button">
-            Back Home
+          <Link href={`tel:${siteConfig.phone}`} className="button outline">
+            <Phone size={16} /> Direct Call: {siteConfig.phone}
+          </Link>
+          <Link href="/#contact" className="button">
+            <Sparkles size={16} /> Reserve Companion
           </Link>
         </div>
       </div>

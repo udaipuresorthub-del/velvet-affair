@@ -31,11 +31,26 @@ export async function generateMetadata({ params }: Props) {
   if (post.publishDate > today) return {};
 
   return {
-    title: `${post.title} - Udaipur Escort Service`,
+    title: `${post.title} | Udaipur Escort Service`,
     description: post.description,
     keywords: post.keywords,
     alternates: {
       canonical: `${siteConfig.url}/blog/${slug}`
+    },
+    openGraph: {
+      title: `${post.title} | Udaipur Escort Service`,
+      description: post.description,
+      url: `${siteConfig.url}/blog/${slug}`,
+      siteName: siteConfig.name,
+      images: [post.image || "/images/udaipur-escort-service.jpg"],
+      locale: "en_IN",
+      type: "article"
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: `${post.title} | Udaipur Escort Service`,
+      description: post.description,
+      images: [post.image || "/images/udaipur-escort-service.jpg"]
     }
   };
 }
@@ -70,7 +85,7 @@ export default async function BlogPostPage({ params }: Props) {
       "name": siteConfig.name,
       "logo": {
         "@type": "ImageObject",
-        "url": `${siteConfig.url}/logo.svg`
+        "url": `${siteConfig.url}/logo.png`
       }
     }
   };
@@ -190,11 +205,12 @@ export default async function BlogPostPage({ params }: Props) {
 
           <div className="blog-post-footer-cta" style={{
             marginTop: 50,
-            padding: 30,
-            background: "rgba(255, 51, 102, 0.03)",
-            border: "1.5px solid var(--line)",
-            borderRadius: 14,
-            textAlign: "center"
+            padding: 36,
+            background: "var(--gold-gradient-soft)",
+            border: "1.5px solid var(--line-strong)",
+            borderRadius: 20,
+            textAlign: "center",
+            boxShadow: "var(--card-shadow)"
           }}>
             <Heart size={30} className="icon-pulse gold-text" style={{ margin: "0 auto 16px" }} />
             <h3 style={{ color: "var(--ink)", fontSize: 20, marginBottom: 10 }}>Looking for Premium Companionship in Udaipur?</h3>

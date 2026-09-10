@@ -1,10 +1,28 @@
 import { siteConfig } from "@/lib/site";
 
 export const metadata = {
-  title: "Terms and Conditions - Udaipur Escort Service",
-  description: "Terms and conditions of use for Udaipur Escort Service. Essential rules, age criteria, and client requirements for booking adult companions in Udaipur.",
+  title: "Terms of Service & 18+ Adult Guidelines | Udaipur Escort Service",
+  description:
+    "Official terms of service, age criteria (18+), and respectful conduct policies for booking adult companions with Udaipur Escort Service.",
   alternates: {
     canonical: `${siteConfig.url}/terms`
+  },
+  openGraph: {
+    title: "Terms of Service & 18+ Adult Guidelines | Udaipur Escort Service",
+    description:
+      "Official terms of service, age criteria (18+), and respectful conduct policies for booking adult companions with Udaipur Escort Service.",
+    url: `${siteConfig.url}/terms`,
+    siteName: siteConfig.name,
+    images: ["/images/udaipur-escort-service.jpg"],
+    locale: "en_IN",
+    type: "website"
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Terms of Service & 18+ Adult Guidelines | Udaipur Escort Service",
+    description:
+      "Official terms of service, age criteria (18+), and respectful conduct policies for booking adult companions with Udaipur Escort Service.",
+    images: ["/images/udaipur-escort-service.jpg"]
   }
 };
 
@@ -38,7 +56,7 @@ export default function TermsPage() {
         <div className="eyebrow">Operating Rules & Criteria</div>
         <h1>Terms and Conditions of Use</h1>
         <p className="lead">
-          Please review the terms of use carefully before making companion inquiries or using our platform in Udaipur.
+          Please review the terms of service carefully before making companion inquiries or using our platform in Udaipur.
         </p>
 
         <h2>Permitted & Authorized Use</h2>
@@ -46,7 +64,7 @@ export default function TermsPage() {
           This website serves exclusively as an information and coordination desk for private adult social companionship. You agree to use the site solely for making legitimate, lawful inquiries. Any form of exploitative, coercive, explicit, abusive, or unlawful requests is strictly prohibited.
         </p>
 
-        <h2>Age Restrictions</h2>
+        <h2>Age Restrictions (Strictly 18+)</h2>
         <p>
           You must be at least 18 years of age to access this site and request companion profiles. By submitting any forms or contacting our operators, you represent and warrant that you are of legal age and possess the capacity to agree to these terms.
         </p>
