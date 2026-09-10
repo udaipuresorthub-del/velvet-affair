@@ -1,7 +1,7 @@
 export const siteConfig = {
   name: "Udaipur Escort Service",
   city: "Udaipur",
-  url: (process.env.NEXT_PUBLIC_SITE_URL || "https://velvet-affair.com").replace(/\/$/, ""),
+  url: "https://velvet-affair.com",
   phone: "+91 9549032117",
   whatsapp: "919549032117",
   email: "Royalkingclub007@gmail.com",
